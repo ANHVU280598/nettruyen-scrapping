@@ -26,7 +26,7 @@ def wait_for_element(driver, by, value, timeout=10):
         print(f"Element with {by}='{value}' not found within {timeout} seconds.")
         return None
 
-for i in range(1, 2):
+for i in range(1, 680):
     page_index = ""
     if i != 1:
         page_index = "?page=" + str(i)
@@ -88,7 +88,8 @@ for i in range(1, 2):
     driver.quit()
 
 # Write the comics data to a JSON file
-with open("comics.json", "w") as json_file:
-    json.dump(comics, json_file,ensure_ascii=False, indent=4)
-
-print("Data written to comics.json")
+    with open("comics.json", "w", encoding="utf-8") as json_file:
+        json.dump(comics, json_file,ensure_ascii=False, indent=4)
+    print("Data written to comics.json")
+    store_page = "Data Store Page" + str(i)
+    print(store_page)
