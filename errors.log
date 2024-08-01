@@ -1,0 +1,75 @@
+2024-08-01 18:46:15,596 - ERROR - Error extracting chapter info from https://nettruyenaa.com/truyen-tranh/anh-hau-nha-toi-sieu-ngot-ngao/chuong-50/720694: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   uc_driver                           0x0000000100f93898 uc_driver + 5179544
+1   uc_driver                           0x0000000100f8b2ca uc_driver + 5145290
+2   uc_driver                           0x0000000100b022b0 uc_driver + 389808
+3   uc_driver                           0x0000000100ad9614 uc_driver + 222740
+4   uc_driver                           0x0000000100b788ed uc_driver + 874733
+5   uc_driver                           0x0000000100b8d4a9 uc_driver + 959657
+6   uc_driver                           0x0000000100b70553 uc_driver + 841043
+7   uc_driver                           0x0000000100b417f6 uc_driver + 649206
+8   uc_driver                           0x0000000100b4205e uc_driver + 651358
+9   uc_driver                           0x0000000100f56b00 uc_driver + 4930304
+10  uc_driver                           0x0000000100f5ba16 uc_driver + 4950550
+11  uc_driver                           0x0000000100f5c0e5 uc_driver + 4952293
+12  uc_driver                           0x0000000100f38ec9 uc_driver + 4808393
+13  uc_driver                           0x0000000100f5c3d9 uc_driver + 4953049
+14  uc_driver                           0x0000000100f2a824 uc_driver + 4749348
+15  uc_driver                           0x0000000100f7b5a8 uc_driver + 5080488
+16  uc_driver                           0x0000000100f7b767 uc_driver + 5080935
+17  uc_driver                           0x0000000100f8aeae uc_driver + 5144238
+18  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
+
+2024-08-01 18:46:16,100 - ERROR - Error extracting chapter info from https://nettruyenaa.com/truyen-tranh/anh-hau-nha-toi-sieu-ngot-ngao/chuong-49/720693: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   uc_driver                           0x0000000100f93898 uc_driver + 5179544
+1   uc_driver                           0x0000000100f8b2ca uc_driver + 5145290
+2   uc_driver                           0x0000000100b022b0 uc_driver + 389808
+3   uc_driver                           0x0000000100ad9614 uc_driver + 222740
+4   uc_driver                           0x0000000100b788ed uc_driver + 874733
+5   uc_driver                           0x0000000100b8d4a9 uc_driver + 959657
+6   uc_driver                           0x0000000100b70553 uc_driver + 841043
+7   uc_driver                           0x0000000100b417f6 uc_driver + 649206
+8   uc_driver                           0x0000000100b4205e uc_driver + 651358
+9   uc_driver                           0x0000000100f56b00 uc_driver + 4930304
+10  uc_driver                           0x0000000100f5ba16 uc_driver + 4950550
+11  uc_driver                           0x0000000100f5c0e5 uc_driver + 4952293
+12  uc_driver                           0x0000000100f38ec9 uc_driver + 4808393
+13  uc_driver                           0x0000000100f5c3d9 uc_driver + 4953049
+14  uc_driver                           0x0000000100f2a824 uc_driver + 4749348
+15  uc_driver                           0x0000000100f7b5a8 uc_driver + 5080488
+16  uc_driver                           0x0000000100f7b767 uc_driver + 5080935
+17  uc_driver                           0x0000000100f8aeae uc_driver + 5144238
+18  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
+
+2024-08-01 18:46:16,925 - ERROR - Error extracting chapter info from https://nettruyenaa.com/truyen-tranh/anh-hau-nha-toi-sieu-ngot-ngao/chuong-48/720692: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+0   uc_driver                           0x0000000100f93898 uc_driver + 5179544
+1   uc_driver                           0x0000000100f8b2ca uc_driver + 5145290
+2   uc_driver                           0x0000000100b022b0 uc_driver + 389808
+3   uc_driver                           0x0000000100ad9614 uc_driver + 222740
+4   uc_driver                           0x0000000100b788ed uc_driver + 874733
+5   uc_driver                           0x0000000100b8d4a9 uc_driver + 959657
+6   uc_driver                           0x0000000100b70553 uc_driver + 841043
+7   uc_driver                           0x0000000100b417f6 uc_driver + 649206
+8   uc_driver                           0x0000000100b4205e uc_driver + 651358
+9   uc_driver                           0x0000000100f56b00 uc_driver + 4930304
+10  uc_driver                           0x0000000100f5ba16 uc_driver + 4950550
+11  uc_driver                           0x0000000100f5c0e5 uc_driver + 4952293
+12  uc_driver                           0x0000000100f38ec9 uc_driver + 4808393
+13  uc_driver                           0x0000000100f5c3d9 uc_driver + 4953049
+14  uc_driver                           0x0000000100f2a824 uc_driver + 4749348
+15  uc_driver                           0x0000000100f7b5a8 uc_driver + 5080488
+16  uc_driver                           0x0000000100f7b767 uc_driver + 5080935
+17  uc_driver                           0x0000000100f8aeae uc_driver + 5144238
+18  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
+

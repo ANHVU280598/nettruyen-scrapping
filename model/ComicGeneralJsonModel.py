@@ -3,6 +3,7 @@ from typing import List
 
 @dataclass
 class ComicGeneral:
+    hash_id: int
     id: int
     name: str
     img_src: str
@@ -15,6 +16,7 @@ class ComicGeneral:
 
     def to_dict(self):
         return {
+            "hash_id": self.hash_id,
             "id": self.id,
             "name": self.name,
             "img_src": self.img_src,
