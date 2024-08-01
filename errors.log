@@ -73,3 +73,134 @@ Stacktrace:
 18  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
 19  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
 
+2024-08-01 18:58:07,859 - ERROR - Error extracting kinds: list index out of range
+2024-08-01 18:58:07,859 - ERROR - Error extracting view_count: list index out of range
+2024-08-01 19:06:02,432 - ERROR - Error extracting different_name: list index out of range
+2024-08-01 19:06:02,432 - ERROR - Error extracting author: list index out of range
+2024-08-01 19:06:48,396 - ERROR - Error extracting different_name: list index out of range
+2024-08-01 19:06:48,396 - ERROR - Error extracting author: list index out of range
+2024-08-01 19:07:11,953 - ERROR - Error extracting different_name: list index out of range
+2024-08-01 19:07:11,953 - ERROR - Error extracting author: list index out of range
+2024-08-01 19:08:01,566 - ERROR - Error extracting different_name: list index out of range
+2024-08-01 19:08:01,566 - ERROR - Error extracting author: list index out of range
+2024-08-01 19:15:23,543 - ERROR - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":".othername"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102b47898 uc_driver + 5179544
+1   uc_driver                           0x0000000102b3f2ca uc_driver + 5145290
+2   uc_driver                           0x00000001026b62b0 uc_driver + 389808
+3   uc_driver                           0x00000001027023e1 uc_driver + 701409
+4   uc_driver                           0x0000000102702691 uc_driver + 702097
+5   uc_driver                           0x00000001026f6f56 uc_driver + 655190
+6   uc_driver                           0x00000001027247dd uc_driver + 841693
+7   uc_driver                           0x00000001026f6e58 uc_driver + 654936
+8   uc_driver                           0x000000010272496e uc_driver + 842094
+9   uc_driver                           0x0000000102741b9b uc_driver + 961435
+10  uc_driver                           0x0000000102724553 uc_driver + 841043
+11  uc_driver                           0x00000001026f57f6 uc_driver + 649206
+12  uc_driver                           0x00000001026f605e uc_driver + 651358
+13  uc_driver                           0x0000000102b0ab00 uc_driver + 4930304
+14  uc_driver                           0x0000000102b0fa16 uc_driver + 4950550
+15  uc_driver                           0x0000000102b100e5 uc_driver + 4952293
+16  uc_driver                           0x0000000102aecec9 uc_driver + 4808393
+17  uc_driver                           0x0000000102b103d9 uc_driver + 4953049
+18  uc_driver                           0x0000000102ade824 uc_driver + 4749348
+19  uc_driver                           0x0000000102b2f5a8 uc_driver + 5080488
+20  uc_driver                           0x0000000102b2f767 uc_driver + 5080935
+21  uc_driver                           0x0000000102b3eeae uc_driver + 5144238
+22  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
+
+2024-08-01 19:15:43,119 - ERROR - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":".othername"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001027a6898 uc_driver + 5179544
+1   uc_driver                           0x000000010279e2ca uc_driver + 5145290
+2   uc_driver                           0x00000001023152b0 uc_driver + 389808
+3   uc_driver                           0x00000001023613e1 uc_driver + 701409
+4   uc_driver                           0x0000000102361691 uc_driver + 702097
+5   uc_driver                           0x0000000102355f56 uc_driver + 655190
+6   uc_driver                           0x00000001023837dd uc_driver + 841693
+7   uc_driver                           0x0000000102355e58 uc_driver + 654936
+8   uc_driver                           0x000000010238396e uc_driver + 842094
+9   uc_driver                           0x00000001023a0b9b uc_driver + 961435
+10  uc_driver                           0x0000000102383553 uc_driver + 841043
+11  uc_driver                           0x00000001023547f6 uc_driver + 649206
+12  uc_driver                           0x000000010235505e uc_driver + 651358
+13  uc_driver                           0x0000000102769b00 uc_driver + 4930304
+14  uc_driver                           0x000000010276ea16 uc_driver + 4950550
+15  uc_driver                           0x000000010276f0e5 uc_driver + 4952293
+16  uc_driver                           0x000000010274bec9 uc_driver + 4808393
+17  uc_driver                           0x000000010276f3d9 uc_driver + 4953049
+18  uc_driver                           0x000000010273d824 uc_driver + 4749348
+19  uc_driver                           0x000000010278e5a8 uc_driver + 5080488
+20  uc_driver                           0x000000010278e767 uc_driver + 5080935
+21  uc_driver                           0x000000010279deae uc_driver + 5144238
+22  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
+
+2024-08-01 19:16:18,585 - ERROR - An error occurred: Message: no such element: Unable to locate element: {"method":"css selector","selector":".othername"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102b29898 uc_driver + 5179544
+1   uc_driver                           0x0000000102b212ca uc_driver + 5145290
+2   uc_driver                           0x00000001026982b0 uc_driver + 389808
+3   uc_driver                           0x00000001026e43e1 uc_driver + 701409
+4   uc_driver                           0x00000001026e4691 uc_driver + 702097
+5   uc_driver                           0x00000001026d8f56 uc_driver + 655190
+6   uc_driver                           0x00000001027067dd uc_driver + 841693
+7   uc_driver                           0x00000001026d8e58 uc_driver + 654936
+8   uc_driver                           0x000000010270696e uc_driver + 842094
+9   uc_driver                           0x0000000102723b9b uc_driver + 961435
+10  uc_driver                           0x0000000102706553 uc_driver + 841043
+11  uc_driver                           0x00000001026d77f6 uc_driver + 649206
+12  uc_driver                           0x00000001026d805e uc_driver + 651358
+13  uc_driver                           0x0000000102aecb00 uc_driver + 4930304
+14  uc_driver                           0x0000000102af1a16 uc_driver + 4950550
+15  uc_driver                           0x0000000102af20e5 uc_driver + 4952293
+16  uc_driver                           0x0000000102aceec9 uc_driver + 4808393
+17  uc_driver                           0x0000000102af23d9 uc_driver + 4953049
+18  uc_driver                           0x0000000102ac0824 uc_driver + 4749348
+19  uc_driver                           0x0000000102b115a8 uc_driver + 5080488
+20  uc_driver                           0x0000000102b11767 uc_driver + 5080935
+21  uc_driver                           0x0000000102b20eae uc_driver + 5144238
+22  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
+
+2024-08-01 19:17:24,601 - ERROR - An error occurred: name 'a' is not defined
+2024-08-01 19:17:51,712 - ERROR - Error extracting different_name: list index out of range
+2024-08-01 19:17:51,712 - ERROR - Error extracting author: list index out of range
+2024-08-01 19:20:31,601 - ERROR - Error extracting different_name: list index out of range
+2024-08-01 19:20:31,601 - ERROR - Error extracting author: list index out of range
+2024-08-01 19:20:52,519 - ERROR - Error extracting different_name: list index out of range
+2024-08-01 19:20:52,519 - ERROR - Error extracting author: list index out of range
+2024-08-01 19:24:57,107 - ERROR - An error occurred: name 'b' is not defined
+2024-08-01 19:25:13,012 - ERROR - An error occurred: name 'b' is not defined
+2024-08-01 19:25:41,144 - ERROR - Error extracting different_name: Message: no such element: Unable to locate element: {"method":"css selector","selector":".othername"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102701898 uc_driver + 5179544
+1   uc_driver                           0x00000001026f92ca uc_driver + 5145290
+2   uc_driver                           0x00000001022702b0 uc_driver + 389808
+3   uc_driver                           0x00000001022bc3e1 uc_driver + 701409
+4   uc_driver                           0x00000001022bc691 uc_driver + 702097
+5   uc_driver                           0x00000001022b0f56 uc_driver + 655190
+6   uc_driver                           0x00000001022de7dd uc_driver + 841693
+7   uc_driver                           0x00000001022b0e58 uc_driver + 654936
+8   uc_driver                           0x00000001022de96e uc_driver + 842094
+9   uc_driver                           0x00000001022fbb9b uc_driver + 961435
+10  uc_driver                           0x00000001022de553 uc_driver + 841043
+11  uc_driver                           0x00000001022af7f6 uc_driver + 649206
+12  uc_driver                           0x00000001022b005e uc_driver + 651358
+13  uc_driver                           0x00000001026c4b00 uc_driver + 4930304
+14  uc_driver                           0x00000001026c9a16 uc_driver + 4950550
+15  uc_driver                           0x00000001026ca0e5 uc_driver + 4952293
+16  uc_driver                           0x00000001026a6ec9 uc_driver + 4808393
+17  uc_driver                           0x00000001026ca3d9 uc_driver + 4953049
+18  uc_driver                           0x0000000102698824 uc_driver + 4749348
+19  uc_driver                           0x00000001026e95a8 uc_driver + 5080488
+20  uc_driver                           0x00000001026e9767 uc_driver + 5080935
+21  uc_driver                           0x00000001026f8eae uc_driver + 5144238
+22  libsystem_pthread.dylib             0x00007ff80edbc18b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff80edb7ae3 thread_start + 15
+

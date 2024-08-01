@@ -78,6 +78,10 @@ def open_browser_in_headless_mode():
             detail_info = driver.find_elements(By.CLASS_NAME, 'detail-info')
             ul_list_info = detail_info[0].find_elements(By.CLASS_NAME, 'list-info')
             lists = ul_list_info[0].find_elements(By.CLASS_NAME, 'col-xs-8')
+            
+            # lists = lists[::-1]
+            # a = ul_list_info[0].find_element(By.CLASS_NAME, "othername").text
+         
 
             # Initialize variables to hold the comic information
             different_name = ""
@@ -87,28 +91,28 @@ def open_browser_in_headless_mode():
             view_count = ""
 
             try:
-                different_name = lists[0].text
+                different_name = ul_list_info[0].find_element(By.CLASS_NAME, "othername").find_element(By.CLASS_NAME, 'col-xs-8').text
             except Exception as e:
                 logging.error(f"Error extracting different_name: {e}")
 
             try:
-                author = lists[1].text
+                author = ul_list_info[0].find_element(By.CLASS_NAME, "author").find_element(By.CLASS_NAME, 'col-xs-8').text
             except Exception as e:
                 logging.error(f"Error extracting author: {e}")
 
             try:
-                status = lists[2].text
+                status = ul_list_info[0].find_element(By.CLASS_NAME, "status").find_element(By.CLASS_NAME, 'col-xs-8').text
             except Exception as e:
                 logging.error(f"Error extracting status: {e}")
 
             try:
-                kind_str = lists[3].text
+                kind_str = ul_list_info[0].find_element(By.CLASS_NAME, "kind").find_element(By.CLASS_NAME, 'col-xs-8').text
                 kinds = kind_str.split('-')
             except Exception as e:
                 logging.error(f"Error extracting kinds: {e}")
 
             try:
-                view_count = lists[4].text
+                view_count = ul_list_info[0].find_element(By.CLASS_NAME, "row").find_element(By.CLASS_NAME, 'col-xs-8').text
             except Exception as e:
                 logging.error(f"Error extracting view_count: {e}")
 
