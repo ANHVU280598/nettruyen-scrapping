@@ -22,10 +22,12 @@ def display_menu():
 
 def option1():
     print("Update All Manga Home Page")
-    with ThreadPoolExecutor(max_workers=2) as executor:
-        futures = [executor.submit(process_page, i) for i in range(1, 314)]
-        for future in futures:
-            future.result()
+    # with ThreadPoolExecutor(max_workers=2) as executor:
+    #     futures = [executor.submit(process_page, i) for i in range(1, 314)]
+    #     for future in futures:
+    #         future.result()
+    for i in range (1,314):
+        process_page(i)
 
 def option2():
     print("Update All Info Of Manga in Existing Database")
