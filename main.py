@@ -1,69 +1,58 @@
+from scrap_homepage import scrap_homepage
 from seleniumbase import Driver
 from selenium.webdriver.common.by import By
-from model.ComicGeneralModel import ComicGeneral
-from datetime import datetime
-from model.ComicGeneralModel import ComicGeneral
-from ultilities.saveCsv import write_comic_to_csv
-from ultilities.nameToId import name_to_id
-from ultilities.convertToCurrentTime import convertUpdateTimeToSec
-current_datetime = datetime.now()
-formatted_datetime = current_datetime.strftime("%m/%d/%Y")
+from concurrent.futures import ThreadPoolExecutor
 
-ComicGeneralArr = []
-for i in range(1, 2):
-    page_index = ""
-    if i != 1:
-        page_index = "?page=" + str(i)
-
-    ulr_tat_ca_truyen = "https://nettruyenaa.com/tim-truyen" + page_index
-    ulr_truyen_moi = "https://nettruyenaa.com/tim-truyen?sort=15&status=&page=" + page_index
-    url = ulr_tat_ca_truyen
-
+def process_page(i):
     driver = Driver(uc=True)
-    driver.uc_open_with_reconnect(url, 4)
-    driver.sleep(3)
+    try:
+        page_index = "" if i == 1 else f"?page={i}"
+        url = f"https://nettruyenfull.com{page_index}"
+        scrap_homepage(driver, url, i)
+        print(f"Data Stored for Page {i}")
+    finally:
+        driver.quit()
 
-    items = driver.find_elements(By.CLASS_NAME, "item")
+def display_menu():
+    print("Main Menu")
+    print("1. Update All Manga Home Page")
+    print("2. Update All Info Of Manga in Existing Database")
+    print("3. Fully Update All News And Current Comics.")
+    print("4. Exit")
 
-    for index,item in enumerate(items): 
-        comic_general = item.find_elements(By.TAG_NAME, 'a')
-        comic_general_url = item.find_elements(By.TAG_NAME, 'img')
-        comic_name = comic_general[0].get_attribute('title').replace(',','.')
-        comic_image_src = comic_general_url[0].get_attribute('src')
-        comic_url =  comic_general[0].get_attribute('href')
+def option1():
+    print("Update All Manga Home Page")
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        futures = [executor.submit(process_page, i) for i in range(1, 314)]
+        for future in futures:
+            future.result()
 
-        size = len(item.find_elements(By.CLASS_NAME, 'pull-left')[0].text.split())
-        
-        comic_viewCount, comic_comment, comic_love ="","",""
+def option2():
+    print("Update All Info Of Manga in Existing Database")
+    # Implement option 2 functionality here
 
-        if (size == 3):
-            comic_viewCount, comic_comment, comic_love =  item.find_elements(By.CLASS_NAME, 'pull-left')[0].text.split()
-        if (size == 2):
-            comic_viewCount, comic_comment =  item.find_elements(By.CLASS_NAME, 'pull-left')[0].text.split()
-        if (size == 1):
-            comic_viewCount =  item.find_elements(By.CLASS_NAME, 'pull-left')[0].text.split()
-        comic_viewCount = (comic_viewCount.replace(",","."))
-        comic_comment = (comic_comment.replace(",","."))
-        comic_love = (comic_love.replace(",","."))
-        
-        newest_chapter = comic_general[2].text
-        updated_at = item.find_elements(By.CLASS_NAME, 'time')[0].text
+def option3():
+    print("Fully Update All News And Current Comics.")
+    # Implement option 3 functionality here
 
-        updated_at = convertUpdateTimeToSec(updated_at)
+def main():
+    choice = ''
+    while choice != '4':
+        display_menu()
+        choice = input("Enter your choice (1-4): ")
 
-        
-
-        id = name_to_id(comic_name)
-        comicGeneral = ComicGeneral( id = name_to_id(comic_name),name = comic_name ,img_src = comic_image_src ,comic_url = comic_url,
-                                    view_count = comic_viewCount ,comment = comic_comment,love =comic_love,
-                                    newest_chapter =newest_chapter,updated_at = updated_at)
-        if(len(ComicGeneralArr) == 0):
-           write_comic_to_csv(comicGeneral)
-           ComicGeneralArr.append(id)
+        if choice == '1':
+            option1()
+        elif choice == '2':
+            option2()
+        elif choice == '3':
+            option3()
+        elif choice == '4':
+            print("Exiting the program. Goodbye!")
+            break
         else:
-            if (id in ComicGeneralArr):
-                pass
-            else:
-                write_comic_to_csv(comicGeneral)
-                ComicGeneralArr.append(id)
-    driver.quit()
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    # main()
+    option1()

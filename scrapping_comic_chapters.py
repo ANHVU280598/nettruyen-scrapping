@@ -73,6 +73,7 @@ def open_browser_in_headless_mode():
         driver.uc_open_with_reconnect(url, 4)
         driver.sleep(3)
 
+        
         try:
             # Extract details from the left table
             detail_info = driver.find_elements(By.CLASS_NAME, 'detail-info')
