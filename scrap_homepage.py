@@ -19,6 +19,17 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 logging.basicConfig(filename='errors.log', level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 current_datetime = datetime.now()
 formatted_datetime = current_datetime.strftime("%m/%d/%Y")
+def scroll_whole_page (driver):
+         # Get the total scroll height
+    total_height = driver.execute_script("return document.body.scrollHeight")
+        
+        # Calculate the increment for scrolling (20 parts)
+    scroll_increment = total_height / 20
+        
+        # Scroll through the page in increments
+    for i in range(20):
+        driver.execute_script(f"window.scrollTo(0, {scroll_increment * (i + 1)});")
+        time.sleep(1)  # Wait for new images to load   
 
 def is_valid_https_url(url):
     https_pattern = r'^https://[a-zA-Z0-9\-._~:/?#\[\]@!$&\'()*+,;%=]+$'
@@ -71,6 +82,8 @@ def scrap_eachChapter_Comic(url):
         driver = Driver(uc=True)
         driver.uc_open_with_reconnect(url, 4)
         driver.sleep(3)
+        scroll_whole_page(driver)
+
         detail_info = driver.find_element(By.CLASS_NAME, "detail-info")
         right_detail_info = detail_info.find_element(By.XPATH, "//div[contains(@class, 'col-xs-8') and contains(@class, 'col-info')]")
 
@@ -95,7 +108,7 @@ def scrap_eachChapter_Comic(url):
         # Sort chapters based on chapter number (ensure the format is numeric for correct sorting)
 
         # Use ThreadPoolExecutor to process chapters in parallel
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        with ThreadPoolExecutor(max_workers=3) as executor:
             futures = [executor.submit(process_chapter, li) for _, li in chapters_data]
             for future in as_completed(futures):
                 chapter = future.result()
@@ -113,6 +126,7 @@ def scrap_homepage(driver, url, index):
     try:
         driver.get(url)
         driver.sleep(3)
+        scroll_whole_page(driver)
         item_parent = driver.find_element(By.CLASS_NAME, "items")
         item_child = item_parent.find_elements(By.CLASS_NAME, "item")
         for index, item_child_inner in enumerate(item_child):
