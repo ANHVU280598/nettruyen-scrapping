@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 from ultilities.saveJson import write_to_json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
+import time
 # Configure logging
 logging.basicConfig(filename='errors.log', level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 current_datetime = datetime.now()
@@ -40,11 +40,11 @@ def get_image_in_chapter(chapter_url, driver):
     try:
         driver.uc_open_with_reconnect(chapter_url, 4)
         page_chapters = driver.find_elements(By.CLASS_NAME, 'page-chapter')
-
+        scroll_whole_page(driver)
         # Remove Ad Page
         remove_ad_page = page_chapters
         for link_img in remove_ad_page:
-            img_src = link_img.find_element(By.TAG_NAME, 'img').get_attribute('data-original')
+            img_src = link_img.find_element(By.TAG_NAME, 'img').get_attribute('src')
             list_img_src.append(img_src)
     except Exception:
         logging.error(f"Error on line {traceback.extract_stack()[-2].lineno} while getting images from chapter {chapter_url}")
