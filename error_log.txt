@@ -1,0 +1,4 @@
+Error at process_comic(url), line: 58
+Error at append_new_data(comicModel), line: 44
+Error at process_comic(url), line: 58
+Error at append_new_data(comicModel), line: 44

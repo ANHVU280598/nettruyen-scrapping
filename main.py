@@ -6,8 +6,9 @@ from concurrent.futures import ThreadPoolExecutor
 def process_page(i):
     driver = Driver(uc=True)
     try:
-        page_index = "" if i == 1 else f"?page={i}"
-        url = f"https://nettruyenfull.com{page_index}"
+        page_index = "" if i == 1 else f"/page/{i}/"
+        url = f"https://manhwaclan.com/{page_index}"
+        
         scrap_homepage(driver, url, i)
         print(f"Data Stored for Page {i}")
     finally:
@@ -26,7 +27,7 @@ def option1():
     #     futures = [executor.submit(process_page, i) for i in range(1, 314)]
     #     for future in futures:
     #         future.result()
-    for i in range (1,314):
+    for i in range (1,2):
         process_page(i)
 
 def option2():
