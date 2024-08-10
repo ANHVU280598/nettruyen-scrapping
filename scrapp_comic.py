@@ -115,7 +115,7 @@ def process_comic(url):
 
         chapters = [None] * len(list_manga_li)
 
-        with ThreadPoolExecutor(max_workers=3) as executor:
+        with ThreadPoolExecutor(max_workers=5) as executor:
             # Submit tasks with index to keep track of order
             futures = {executor.submit(process_manga_chapter, idx, each_manga): idx for idx, each_manga in enumerate(list_manga_li)}
             
@@ -149,9 +149,13 @@ def scrapp_comics(url):
             comic_url = manga.find_element(By.TAG_NAME, 'h3').find_element(By.TAG_NAME, 'a').get_attribute('href')
             view_count = 0
             comment = 0
-            rating = manga.find_element(By.XPATH, "//span[contains(@class, 'score font-meta total_votes')]").text
-            newest_chapter = manga.find_element(By.XPATH,"//span[contains(@class, 'chapter font-meta')]").text
-                
+            # rating = manga.find_element(By.XPATH, "//span[contains(@class, 'score font-meta total_votes')]").text
+            # newest_chapter = manga.find_element(By.XPATH,"//span[contains(@class, 'chapter font-meta')]").text
+            parent_rating = manga.find_element(By.CLASS_NAME, 'post-total-rating')
+            rating = parent_rating.find_element(By.TAG_NAME, 'span').text
+
+            parent_chapter = manga.find_element(By.CLASS_NAME, 'list-chapter')
+            newest_chapter = parent_chapter.find_element(By.TAG_NAME, 'span').text
             print(f"ID: {id}")
             print(f"Comic Name: {comic_name}")
             print(f"Hash ID: {hash_id}")
@@ -183,7 +187,6 @@ def scrapp_comics(url):
             )
 
             append_new_data(comicModel)
-            break
                 
     except Exception:
         logging.error(f"Error at scrapp_comics(url), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
