@@ -4,6 +4,7 @@ from typing import List
 @dataclass
 class Chapter:
     no_chapter: int
+    chapter_title: str
     chapter_img: List[str]
 
 @dataclass
@@ -19,9 +20,9 @@ class ComicGeneral:
     comic_url: str
     view_count: int
     comment: int
-    love: int
+    rating: int
     newest_chapter: str
-    updated_at: int
+    # updated_at: int
     chapters: List[Chapter]
 
     def to_dict(self):
@@ -37,8 +38,8 @@ class ComicGeneral:
             "comic_url": self.comic_url,
             "view_count": self.view_count,
             "comment": self.comment,
-            "love": self.love,
+            "rating": self.rating,
             "newest_chapter": self.newest_chapter,
-            "updated_at": self.updated_at,
+            # "updated_at": self.updated_at,
             "chapters": [chapter.__dict__ for chapter in self.chapters]
         }
