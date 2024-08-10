@@ -31,7 +31,7 @@ def scroll_to_end_of_the_page(driver):
         
         for i in range(5):
             driver.execute_script(f"window.scrollTo(0, {scroll_increment * (i + 1)});")
-            time.sleep(1)
+            time.sleep(2)
     except Exception:
         logging.error(f"Error at scroll_to_end_of_the_page(driver), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
 
@@ -53,7 +53,7 @@ def append_new_data(comicModel):
         logging.error(f"Error at append_new_data(comicModel), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
 
 def process_comic_chapters(url):
-    driver = Driver(uc=True, headless=True)
+    driver = Driver(uc=True, headless=False)
     chapter_title = None
     chapter_imgs = []
     print(f"Process comic chapter: {url}")
@@ -80,7 +80,7 @@ def process_comic_chapters(url):
 
 # Browse comic URL and get its chapters links
 def process_comic(url):
-    driver = Driver(uc=True, headless=True)
+    driver = Driver(uc=True, headless=False)
     other_name = ''
     author_name = ''
     status = ''
@@ -115,7 +115,7 @@ def process_comic(url):
 
         chapters = [None] * len(list_manga_li)
 
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        with ThreadPoolExecutor(max_workers=3) as executor:
             # Submit tasks with index to keep track of order
             futures = {executor.submit(process_manga_chapter, idx, each_manga): idx for idx, each_manga in enumerate(list_manga_li)}
             
@@ -133,7 +133,7 @@ def process_comic(url):
     return other_name, author_name, status, kinds, chapters
 
 def scrapp_comics(url):
-    driver = Driver(uc=True,  headless=True)
+    driver = Driver(uc=True,  headless=False)
     
     try:
         driver.uc_open_with_reconnect(url, 4)
@@ -166,8 +166,8 @@ def scrapp_comics(url):
             print(f"Rating: {rating}")
             print(f"Newest Chapter: {newest_chapter}")
 
-            test_url = "https://manhwaclan.com/manga/the-cold-presidents-little-cutie/"
-            other_name, author_name, status, kinds, list_chapters = process_comic(test_url)
+            # test_url = "https://manhwaclan.com/manga/the-cold-presidents-little-cutie/"
+            other_name, author_name, status, kinds, list_chapters = process_comic(comic_url)
 
             comicModel = ComicGeneral(
                 id=id,
