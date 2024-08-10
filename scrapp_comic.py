@@ -47,13 +47,16 @@ def append_new_data(comicModel):
         data.append(comicModel.to_dict())
         with open(file_path, 'w', encoding='utf-8') as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
+
+        print("Successfull add New Comic")
     except Exception:
         logging.error(f"Error at append_new_data(comicModel), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
 
 def process_comic_chapters(url):
-    driver = Driver(uc=True)
+    driver = Driver(uc=True, headless=True)
     chapter_title = None
     chapter_imgs = []
+    print(f"Process comic chapter: {url}")
     try:
         driver.uc_open_with_reconnect(url, 4)
         driver.sleep(1)
@@ -77,12 +80,13 @@ def process_comic_chapters(url):
 
 # Browse comic URL and get its chapters links
 def process_comic(url):
-    driver = Driver(uc=True)
+    driver = Driver(uc=True, headless=True)
     other_name = ''
     author_name = ''
     status = ''
     kinds = []
     chapters = []
+    print(f"Process comic Url: {url}")
     try:
         driver.uc_open_with_reconnect(url, 4)
         driver.sleep(1)
@@ -111,7 +115,7 @@ def process_comic(url):
 
         chapters = [None] * len(list_manga_li)
 
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        with ThreadPoolExecutor(max_workers=3) as executor:
             # Submit tasks with index to keep track of order
             futures = {executor.submit(process_manga_chapter, idx, each_manga): idx for idx, each_manga in enumerate(list_manga_li)}
             
@@ -119,6 +123,7 @@ def process_comic(url):
             for future in as_completed(futures):
                 idx, chapter = future.result()
                 chapters[idx] = chapter
+                print(f"Chapter {idx} done")
 
     except Exception:
         logging.error(f"Error at process_comic(url), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
@@ -128,7 +133,7 @@ def process_comic(url):
     return other_name, author_name, status, kinds, chapters
 
 def scrapp_comics(url):
-    driver = Driver(uc=True)
+    driver = Driver(uc=True,  headless=True)
     
     try:
         driver.uc_open_with_reconnect(url, 4)
