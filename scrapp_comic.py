@@ -48,22 +48,22 @@ def scroll_to_end_of_the_page(driver):
 @retry_on_exception()
 def append_new_data(comicModel):
     
-    # file_path = 'comica.json'
-    # try:
-    #     with open(file_path, 'r') as file:
-    #         data = json.load(file)
-    # except FileNotFoundError:
-    #     data = []
-
-    # data.append(comicModel.to_dict())
-    # with open(file_path, 'w', encoding='utf-8') as file:
-    #     json.dump(data, file, indent=4, ensure_ascii=False)
+    file_path = 'comics.json'
     try:
-        file_path = 'comics.json'
-        write_to_json(comicModel, file_path)
-    except Exception as e:
-        print(f'Something Wrong in Append_New_Data')
-    print("Successful add New Comic")
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        data = []
+
+    data.append(comicModel.to_dict())
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, indent=4, ensure_ascii=False)
+    # try:
+    #     file_path = 'comics.json'
+    #     write_to_json(comicModel, file_path)
+    # except Exception as e:
+    #     print(f'Something Wrong in Append_New_Data')
+    # print("Successful add New Comic")
 
 @retry_on_exception()
 def process_comic_chapters(url):
@@ -127,7 +127,7 @@ def process_comic(url):
 
         chapters = [None] * len(list_manga_li)
 
-        with ThreadPoolExecutor(max_workers=6) as executor:
+        with ThreadPoolExecutor(max_workers=10) as executor:
             futures = {executor.submit(process_manga_chapter, idx, each_manga): idx for idx, each_manga in enumerate(list_manga_li)}
             for future in as_completed(futures):
                 idx, chapter = future.result()
@@ -196,5 +196,10 @@ def scrapp_comics(url):
         driver.quit()
 
 if __name__ == "__main__":
-    target_url = 'https://manhwaclan.com/'
-    scrapp_comics(target_url)
+    # target_url = 'https://manhwaclan.com/'
+
+    # https://manhwaclan.com/page/5/
+    for i in range (1,170):
+        page_index = "" if i == 1 else f"/page/{i}/"
+        url = f"https://manhwaclan.com/{page_index}"
+        scrapp_comics(url)
