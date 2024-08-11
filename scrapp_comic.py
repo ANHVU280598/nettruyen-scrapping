@@ -8,11 +8,11 @@ import traceback
 import logging
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
+from ultilities.saveJson import write_to_json
 # Configure logging
 logging.basicConfig(filename='error_log.txt', level=logging.ERROR, format='%(message)s')
 
-def retry_on_exception(retries=3, delay=2):
+def retry_on_exception(retries=5, delay=5):
     def decorator(func):
         def wrapper(*args, **kwargs):
             for attempt in range(retries):
@@ -47,17 +47,22 @@ def scroll_to_end_of_the_page(driver):
 
 @retry_on_exception()
 def append_new_data(comicModel):
-    file_path = 'comica.json'
+    
+    # file_path = 'comica.json'
+    # try:
+    #     with open(file_path, 'r') as file:
+    #         data = json.load(file)
+    # except FileNotFoundError:
+    #     data = []
+
+    # data.append(comicModel.to_dict())
+    # with open(file_path, 'w', encoding='utf-8') as file:
+    #     json.dump(data, file, indent=4, ensure_ascii=False)
     try:
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        data = []
-
-    data.append(comicModel.to_dict())
-    with open(file_path, 'w', encoding='utf-8') as file:
-        json.dump(data, file, indent=4, ensure_ascii=False)
-
+        file_path = 'comics.json'
+        write_to_json(comicModel, file_path)
+    except Exception as e:
+        print(f'Something Wrong in Append_New_Data')
     print("Successful add New Comic")
 
 @retry_on_exception()
