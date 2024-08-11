@@ -1,7 +1,5 @@
 from seleniumbase import Driver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from ultilities.nameToId import name_to_id
 from model.ComicModel import ComicGeneral, Chapter
 import time
@@ -14,6 +12,20 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # Configure logging
 logging.basicConfig(filename='error_log.txt', level=logging.ERROR, format='%(message)s')
 
+def retry_on_exception(retries=3, delay=2):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for attempt in range(retries):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    logging.error(f"Error at {func.__name__}, attempt {attempt + 1}/{retries}: {e}")
+                    time.sleep(delay)
+            raise
+        return wrapper
+    return decorator
+
+@retry_on_exception()
 def process_manga_chapter(index, each_manga):
     no_chapter = each_manga.find_element(By.TAG_NAME, 'a').text
     chapter_url = each_manga.find_element(By.TAG_NAME, 'a').get_attribute('href')
@@ -23,37 +35,34 @@ def process_manga_chapter(index, each_manga):
         chapter_title=chapter_title,
         chapter_img=chapter_img
     )
-# Scroll to the end of the page to make sure that all images are loaded
+
+@retry_on_exception()
 def scroll_to_end_of_the_page(driver):
-    try:
-        total_height = driver.execute_script("return document.body.scrollHeight")
-        scroll_increment = total_height / 5
-        
-        for i in range(5):
-            driver.execute_script(f"window.scrollTo(0, {scroll_increment * (i + 1)});")
-            time.sleep(2)
-    except Exception:
-        logging.error(f"Error at scroll_to_end_of_the_page(driver), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
+    total_height = driver.execute_script("return document.body.scrollHeight")
+    scroll_increment = total_height / 5
+    
+    for i in range(5):
+        driver.execute_script(f"window.scrollTo(0, {scroll_increment * (i + 1)});")
+        time.sleep(2)
 
+@retry_on_exception()
 def append_new_data(comicModel):
+    file_path = 'comica.json'
     try:
-        file_path = 'comics.json'
-        try:
-            with open(file_path, 'r') as file:
-                data = json.load(file)
-        except FileNotFoundError:
-            data = []
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        data = []
 
-        data.append(comicModel.to_dict())
-        with open(file_path, 'w', encoding='utf-8') as file:
-            json.dump(data, file, indent=4, ensure_ascii=False)
+    data.append(comicModel.to_dict())
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, indent=4, ensure_ascii=False)
 
-        print("Successfull add New Comic")
-    except Exception:
-        logging.error(f"Error at append_new_data(comicModel), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
+    print("Successful add New Comic")
 
+@retry_on_exception()
 def process_comic_chapters(url):
-    driver = Driver(uc=True, headless=False)
+    driver = Driver(uc=True, headless=True)
     chapter_title = None
     chapter_imgs = []
     print(f"Process comic chapter: {url}")
@@ -63,24 +72,22 @@ def process_comic_chapters(url):
 
         scroll_to_end_of_the_page(driver)
 
-        chapter_title = driver.find_element(By.XPATH,"//h1[contains(@id, 'chapter-heading')]").text
-        chapter_imgs = driver.find_elements(By.XPATH,"//div[contains(@class, 'page-break no-gaps')]")
+        chapter_title = driver.find_element(By.XPATH, "//h1[contains(@id, 'chapter-heading')]").text
+        chapter_imgs = driver.find_elements(By.XPATH, "//div[contains(@class, 'page-break no-gaps')]")
 
         chapter_img_list = []
         for chapter_img in chapter_imgs:
             chapter_img_url = chapter_img.find_element(By.TAG_NAME, 'img').get_attribute('src')
             chapter_img_list.append(chapter_img_url)
 
-    except Exception:
-        logging.error(f"Error at process_comic_chapters(url), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
     finally:
         driver.quit()
 
     return chapter_title, chapter_img_list
 
-# Browse comic URL and get its chapters links
+@retry_on_exception()
 def process_comic(url):
-    driver = Driver(uc=True, headless=False)
+    driver = Driver(uc=True, headless=True)
     other_name = ''
     author_name = ''
     status = ''
@@ -115,25 +122,20 @@ def process_comic(url):
 
         chapters = [None] * len(list_manga_li)
 
-        with ThreadPoolExecutor(max_workers=3) as executor:
-            # Submit tasks with index to keep track of order
+        with ThreadPoolExecutor(max_workers=6) as executor:
             futures = {executor.submit(process_manga_chapter, idx, each_manga): idx for idx, each_manga in enumerate(list_manga_li)}
-            
-            # Collect results and place them in the correct position
             for future in as_completed(futures):
                 idx, chapter = future.result()
                 chapters[idx] = chapter
                 print(f"Chapter {idx} done")
 
-    except Exception:
-        logging.error(f"Error at process_comic(url), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
     finally:
         driver.quit()
     
     return other_name, author_name, status, kinds, chapters
 
 def scrapp_comics(url):
-    driver = Driver(uc=True,  headless=False)
+    driver = Driver(uc=True, headless=True)
     
     try:
         driver.uc_open_with_reconnect(url, 4)
@@ -149,8 +151,6 @@ def scrapp_comics(url):
             comic_url = manga.find_element(By.TAG_NAME, 'h3').find_element(By.TAG_NAME, 'a').get_attribute('href')
             view_count = 0
             comment = 0
-            # rating = manga.find_element(By.XPATH, "//span[contains(@class, 'score font-meta total_votes')]").text
-            # newest_chapter = manga.find_element(By.XPATH,"//span[contains(@class, 'chapter font-meta')]").text
             parent_rating = manga.find_element(By.CLASS_NAME, 'post-total-rating')
             rating = parent_rating.find_element(By.TAG_NAME, 'span').text
 
@@ -166,7 +166,6 @@ def scrapp_comics(url):
             print(f"Rating: {rating}")
             print(f"Newest Chapter: {newest_chapter}")
 
-            # test_url = "https://manhwaclan.com/manga/the-cold-presidents-little-cutie/"
             other_name, author_name, status, kinds, list_chapters = process_comic(comic_url)
 
             comicModel = ComicGeneral(
@@ -188,8 +187,6 @@ def scrapp_comics(url):
 
             append_new_data(comicModel)
                 
-    except Exception:
-        logging.error(f"Error at scrapp_comics(url), line: {traceback.extract_tb(sys.exc_info()[2])[-1].lineno}")
     finally:
         driver.quit()
 
