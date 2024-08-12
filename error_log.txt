@@ -325,3 +325,6 @@ Stacktrace:
 22  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
 23  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
 
+Error at process_comic, attempt 1/5: [Errno 54] Connection reset by peer
+An error occurred: name 'logging' is not defined
+An error occurred: name 'logging' is not defined

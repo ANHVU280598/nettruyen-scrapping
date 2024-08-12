@@ -7,7 +7,7 @@ def read_json_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
-def write_to_json(new_data, file_path='comic_chapter_data.json'):
+def write_to_json(new_data, file_path):
     # Ensure new_data is a list of dictionaries
     if not isinstance(new_data, list):
         new_data = [new_data]
@@ -36,4 +36,4 @@ def write_to_json(new_data, file_path='comic_chapter_data.json'):
     with open(file_path, 'w', encoding='utf-8') as json_file:
         json.dump(updated_data, json_file, ensure_ascii=False, indent=4)
 
-    print("Comic data has been updated in", file_path)
+    # print("Comic data has been updated in", file_path)
