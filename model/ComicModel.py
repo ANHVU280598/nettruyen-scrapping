@@ -1,11 +1,13 @@
 from dataclasses import dataclass
 from typing import List
+from datetime import datetime
 
 @dataclass
 class Chapter:
     no_chapter: int
     chapter_title: str
     chapter_img: List[str]
+    updated_at: datetime
 
 @dataclass
 class ComicGeneral:
