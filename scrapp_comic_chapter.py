@@ -28,7 +28,6 @@ def scroll_to_end_of_the_page(driver):
 
 @retry_on_exception()
 def process_manga_chapter(index, each_manga):
-    print("start from process_manga_chapter")
     no_chapter = each_manga.find_element(By.TAG_NAME, 'a').text
     chapter_url = each_manga.find_element(By.TAG_NAME, 'a').get_attribute('href')
     chapter_title, chapter_img = process_comic_chapters(chapter_url)
@@ -42,7 +41,6 @@ def process_manga_chapter(index, each_manga):
 
 @retry_on_exception()
 def process_comic_chapters(url):
-    print("start from process_comic_chapters")
     driver = Driver(uc=True, headless=True)
     chapter_title = None
     chapter_imgs = []
@@ -89,7 +87,6 @@ def process_manhwaclan(url, hash_id):
 
 
         chapters = [None] * len(list_manga_li)
-        print("start from process_manhwaclan")
         with ThreadPoolExecutor(max_workers=10) as executor:
             futures = {executor.submit(process_manga_chapter, idx, each_manga): idx for idx, each_manga in enumerate(list_manga_li)}
             for future in as_completed(futures):
@@ -110,6 +107,7 @@ def process_manhwaclan(url, hash_id):
 
 
 if __name__ == "__main__":
-    data = read_json_file('comic_name.json')
-    process_manhwaclan(data[1].comic_url, data[1].hash_id)
-    print("done")
+    datas = read_json_file('comic_name.json')
+    for data in datas:
+        process_manhwaclan(data.comic_url, data.hash_id)
+        print(f"done: {data.hash_id}")

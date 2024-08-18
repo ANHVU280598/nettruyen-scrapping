@@ -1,0 +1,1951 @@
+Error at process_manhwaclan, attempt 1/3: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000101165278 uc_driver + 5096056
+1   uc_driver                           0x000000010115caaa uc_driver + 5061290
+2   uc_driver                           0x0000000100ce7fd0 uc_driver + 389072
+3   uc_driver                           0x0000000100cd084a uc_driver + 292938
+4   uc_driver                           0x0000000100cce888 uc_driver + 284808
+5   uc_driver                           0x0000000100ccef2f uc_driver + 286511
+6   uc_driver                           0x0000000100ce8ba1 uc_driver + 392097
+7   uc_driver                           0x0000000100cbec29 uc_driver + 220201
+8   uc_driver                           0x0000000100cbe4f1 uc_driver + 218353
+9   uc_driver                           0x0000000100d64ef7 uc_driver + 900855
+10  uc_driver                           0x0000000100d58c93 uc_driver + 851091
+11  uc_driver                           0x0000000100d27c79 uc_driver + 650361
+12  uc_driver                           0x0000000100d2849e uc_driver + 652446
+13  uc_driver                           0x0000000101127ff0 uc_driver + 4845552
+14  uc_driver                           0x000000010112cf08 uc_driver + 4865800
+15  uc_driver                           0x000000010112d5d5 uc_driver + 4867541
+16  uc_driver                           0x000000010110ac29 uc_driver + 4725801
+17  uc_driver                           0x000000010112d8c9 uc_driver + 4868297
+18  uc_driver                           0x00000001010fcb44 uc_driver + 4668228
+19  uc_driver                           0x000000010114cda8 uc_driver + 4996520
+20  uc_driver                           0x000000010114cfa7 uc_driver + 4997031
+21  uc_driver                           0x000000010115c6ae uc_driver + 5060270
+22  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_manhwaclan, attempt 1/3: Message: session not created: cannot connect to chrome at 127.0.0.1:9222
+from chrome not reachable
+Stacktrace:
+0   uc_driver                           0x0000000102ba7278 uc_driver + 5096056
+1   uc_driver                           0x0000000102b9eaaa uc_driver + 5061290
+2   uc_driver                           0x0000000102729e01 uc_driver + 388609
+3   uc_driver                           0x00000001027160f3 uc_driver + 307443
+4   uc_driver                           0x0000000102765f89 uc_driver + 634761
+5   uc_driver                           0x000000010275bde4 uc_driver + 593380
+6   uc_driver                           0x00000001027a6cec uc_driver + 900332
+7   uc_driver                           0x000000010279ac93 uc_driver + 851091
+8   uc_driver                           0x0000000102769c79 uc_driver + 650361
+9   uc_driver                           0x000000010276a49e uc_driver + 652446
+10  uc_driver                           0x0000000102b69ff0 uc_driver + 4845552
+11  uc_driver                           0x0000000102b6ef08 uc_driver + 4865800
+12  uc_driver                           0x0000000102b6f5d5 uc_driver + 4867541
+13  uc_driver                           0x0000000102b4cc29 uc_driver + 4725801
+14  uc_driver                           0x0000000102b6f8c9 uc_driver + 4868297
+15  uc_driver                           0x0000000102b3eb44 uc_driver + 4668228
+16  uc_driver                           0x0000000102b8eda8 uc_driver + 4996520
+17  uc_driver                           0x0000000102b8efa7 uc_driver + 4997031
+18  uc_driver                           0x0000000102b9e6ae uc_driver + 5060270
+19  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_manhwaclan, attempt 1/3: Message: session not created: cannot connect to chrome at 127.0.0.1:9222
+from chrome not reachable
+Stacktrace:
+0   uc_driver                           0x0000000100c2b278 uc_driver + 5096056
+1   uc_driver                           0x0000000100c22aaa uc_driver + 5061290
+2   uc_driver                           0x00000001007ade01 uc_driver + 388609
+3   uc_driver                           0x000000010079a0f3 uc_driver + 307443
+4   uc_driver                           0x00000001007e9f89 uc_driver + 634761
+5   uc_driver                           0x00000001007dfde4 uc_driver + 593380
+6   uc_driver                           0x000000010082acec uc_driver + 900332
+7   uc_driver                           0x000000010081ec93 uc_driver + 851091
+8   uc_driver                           0x00000001007edc79 uc_driver + 650361
+9   uc_driver                           0x00000001007ee49e uc_driver + 652446
+10  uc_driver                           0x0000000100bedff0 uc_driver + 4845552
+11  uc_driver                           0x0000000100bf2f08 uc_driver + 4865800
+12  uc_driver                           0x0000000100bf35d5 uc_driver + 4867541
+13  uc_driver                           0x0000000100bd0c29 uc_driver + 4725801
+14  uc_driver                           0x0000000100bf38c9 uc_driver + 4868297
+15  uc_driver                           0x0000000100bc2b44 uc_driver + 4668228
+16  uc_driver                           0x0000000100c12da8 uc_driver + 4996520
+17  uc_driver                           0x0000000100c12fa7 uc_driver + 4997031
+18  uc_driver                           0x0000000100c226ae uc_driver + 5060270
+19  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_manhwaclan, attempt 1/3: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000100f0a278 uc_driver + 5096056
+1   uc_driver                           0x0000000100f01aaa uc_driver + 5061290
+2   uc_driver                           0x0000000100a8cfd0 uc_driver + 389072
+3   uc_driver                           0x0000000100a72d42 uc_driver + 281922
+4   uc_driver                           0x0000000100a73f2f uc_driver + 286511
+5   uc_driver                           0x0000000100a8dba1 uc_driver + 392097
+6   uc_driver                           0x0000000100a63c29 uc_driver + 220201
+7   uc_driver                           0x0000000100a634f1 uc_driver + 218353
+8   uc_driver                           0x0000000100b09ef7 uc_driver + 900855
+9   uc_driver                           0x0000000100afdc93 uc_driver + 851091
+10  uc_driver                           0x0000000100accc79 uc_driver + 650361
+11  uc_driver                           0x0000000100acd49e uc_driver + 652446
+12  uc_driver                           0x0000000100eccff0 uc_driver + 4845552
+13  uc_driver                           0x0000000100ed1f08 uc_driver + 4865800
+14  uc_driver                           0x0000000100ed25d5 uc_driver + 4867541
+15  uc_driver                           0x0000000100eafc29 uc_driver + 4725801
+16  uc_driver                           0x0000000100ed28c9 uc_driver + 4868297
+17  uc_driver                           0x0000000100ea1b44 uc_driver + 4668228
+18  uc_driver                           0x0000000100ef1da8 uc_driver + 4996520
+19  uc_driver                           0x0000000100ef1fa7 uc_driver + 4997031
+20  uc_driver                           0x0000000100f016ae uc_driver + 5060270
+21  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+22  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_manhwaclan, attempt 1/3: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x000000010283b278 uc_driver + 5096056
+1   uc_driver                           0x0000000102832aaa uc_driver + 5061290
+2   uc_driver                           0x00000001023bdfd0 uc_driver + 389072
+3   uc_driver                           0x00000001023a684a uc_driver + 292938
+4   uc_driver                           0x00000001023a4888 uc_driver + 284808
+5   uc_driver                           0x00000001023a4f2f uc_driver + 286511
+6   uc_driver                           0x00000001023beba1 uc_driver + 392097
+7   uc_driver                           0x0000000102394c29 uc_driver + 220201
+8   uc_driver                           0x00000001023944f1 uc_driver + 218353
+9   uc_driver                           0x000000010243aef7 uc_driver + 900855
+10  uc_driver                           0x000000010242ec93 uc_driver + 851091
+11  uc_driver                           0x00000001023fdc79 uc_driver + 650361
+12  uc_driver                           0x00000001023fe49e uc_driver + 652446
+13  uc_driver                           0x00000001027fdff0 uc_driver + 4845552
+14  uc_driver                           0x0000000102802f08 uc_driver + 4865800
+15  uc_driver                           0x00000001028035d5 uc_driver + 4867541
+16  uc_driver                           0x00000001027e0c29 uc_driver + 4725801
+17  uc_driver                           0x00000001028038c9 uc_driver + 4868297
+18  uc_driver                           0x00000001027d2b44 uc_driver + 4668228
+19  uc_driver                           0x0000000102822da8 uc_driver + 4996520
+20  uc_driver                           0x0000000102822fa7 uc_driver + 4997031
+21  uc_driver                           0x00000001028326ae uc_driver + 5060270
+22  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_manhwaclan, attempt 1/3: Message: session not created: cannot connect to chrome at 127.0.0.1:9222
+from chrome not reachable
+Stacktrace:
+0   uc_driver                           0x00000001047a2278 uc_driver + 5096056
+1   uc_driver                           0x0000000104799aaa uc_driver + 5061290
+2   uc_driver                           0x0000000104324e01 uc_driver + 388609
+3   uc_driver                           0x00000001043110f3 uc_driver + 307443
+4   uc_driver                           0x0000000104360f89 uc_driver + 634761
+5   uc_driver                           0x0000000104356de4 uc_driver + 593380
+6   uc_driver                           0x00000001043a1cec uc_driver + 900332
+7   uc_driver                           0x0000000104395c93 uc_driver + 851091
+8   uc_driver                           0x0000000104364c79 uc_driver + 650361
+9   uc_driver                           0x000000010436549e uc_driver + 652446
+10  uc_driver                           0x0000000104764ff0 uc_driver + 4845552
+11  uc_driver                           0x0000000104769f08 uc_driver + 4865800
+12  uc_driver                           0x000000010476a5d5 uc_driver + 4867541
+13  uc_driver                           0x0000000104747c29 uc_driver + 4725801
+14  uc_driver                           0x000000010476a8c9 uc_driver + 4868297
+15  uc_driver                           0x0000000104739b44 uc_driver + 4668228
+16  uc_driver                           0x0000000104789da8 uc_driver + 4996520
+17  uc_driver                           0x0000000104789fa7 uc_driver + 4997031
+18  uc_driver                           0x00000001047996ae uc_driver + 5060270
+19  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_manhwaclan, attempt 1/3: Message: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001033ca278 uc_driver + 5096056
+1   uc_driver                           0x00000001033c1aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102f4cfd0 uc_driver + 389072
+3   uc_driver                           0x0000000102f349fe uc_driver + 289278
+4   uc_driver                           0x0000000102f33517 uc_driver + 283927
+5   uc_driver                           0x0000000102f33f2f uc_driver + 286511
+6   uc_driver                           0x0000000102f4dba1 uc_driver + 392097
+7   uc_driver                           0x0000000102f23c29 uc_driver + 220201
+8   uc_driver                           0x0000000102f234f1 uc_driver + 218353
+9   uc_driver                           0x0000000102fc9ef7 uc_driver + 900855
+10  uc_driver                           0x0000000102fbdc93 uc_driver + 851091
+11  uc_driver                           0x0000000102f8cc79 uc_driver + 650361
+12  uc_driver                           0x0000000102f8d49e uc_driver + 652446
+13  uc_driver                           0x000000010338cff0 uc_driver + 4845552
+14  uc_driver                           0x0000000103391f08 uc_driver + 4865800
+15  uc_driver                           0x00000001033925d5 uc_driver + 4867541
+16  uc_driver                           0x000000010336fc29 uc_driver + 4725801
+17  uc_driver                           0x00000001033928c9 uc_driver + 4868297
+18  uc_driver                           0x0000000103361b44 uc_driver + 4668228
+19  uc_driver                           0x00000001033b1da8 uc_driver + 4996520
+20  uc_driver                           0x00000001033b1fa7 uc_driver + 4997031
+21  uc_driver                           0x00000001033c16ae uc_driver + 5060270
+22  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_manhwaclan, attempt 1/3: Message: session not created
+from unknown error: socket must be connected
+Stacktrace:
+0   uc_driver                           0x0000000104e87278 uc_driver + 5096056
+1   uc_driver                           0x0000000104e7eaaa uc_driver + 5061290
+2   uc_driver                           0x0000000104a09fd0 uc_driver + 389072
+3   uc_driver                           0x00000001049eed67 uc_driver + 277863
+4   uc_driver                           0x0000000104a46577 uc_driver + 636279
+5   uc_driver                           0x0000000104a3c296 uc_driver + 594582
+6   uc_driver                           0x0000000104a86cec uc_driver + 900332
+7   uc_driver                           0x0000000104a7ac93 uc_driver + 851091
+8   uc_driver                           0x0000000104a49c79 uc_driver + 650361
+9   uc_driver                           0x0000000104a4a49e uc_driver + 652446
+10  uc_driver                           0x0000000104e49ff0 uc_driver + 4845552
+11  uc_driver                           0x0000000104e4ef08 uc_driver + 4865800
+12  uc_driver                           0x0000000104e4f5d5 uc_driver + 4867541
+13  uc_driver                           0x0000000104e2cc29 uc_driver + 4725801
+14  uc_driver                           0x0000000104e4f8c9 uc_driver + 4868297
+15  uc_driver                           0x0000000104e1eb44 uc_driver + 4668228
+16  uc_driver                           0x0000000104e6eda8 uc_driver + 4996520
+17  uc_driver                           0x0000000104e6efa7 uc_driver + 4997031
+18  uc_driver                           0x0000000104e7e6ae uc_driver + 5060270
+19  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102bb1278 uc_driver + 5096056
+1   uc_driver                           0x0000000102ba8aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102733fd0 uc_driver + 389072
+3   uc_driver                           0x00000001027809ab uc_driver + 702891
+4   uc_driver                           0x0000000102780a81 uc_driver + 703105
+5   uc_driver                           0x00000001027c4cd4 uc_driver + 982228
+6   uc_driver                           0x00000001027a4f1d uc_driver + 851741
+7   uc_driver                           0x00000001027c2250 uc_driver + 971344
+8   uc_driver                           0x00000001027a4c93 uc_driver + 851091
+9   uc_driver                           0x0000000102773c79 uc_driver + 650361
+10  uc_driver                           0x000000010277449e uc_driver + 652446
+11  uc_driver                           0x0000000102b73ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000102b78f08 uc_driver + 4865800
+13  uc_driver                           0x0000000102b795d5 uc_driver + 4867541
+14  uc_driver                           0x0000000102b56c29 uc_driver + 4725801
+15  uc_driver                           0x0000000102b798c9 uc_driver + 4868297
+16  uc_driver                           0x0000000102b48b44 uc_driver + 4668228
+17  uc_driver                           0x0000000102b98da8 uc_driver + 4996520
+18  uc_driver                           0x0000000102b98fa7 uc_driver + 4997031
+19  uc_driver                           0x0000000102ba86ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102cab278 uc_driver + 5096056
+1   uc_driver                           0x0000000102ca2aaa uc_driver + 5061290
+2   uc_driver                           0x000000010282dfd0 uc_driver + 389072
+3   uc_driver                           0x000000010287a9ab uc_driver + 702891
+4   uc_driver                           0x000000010287aa81 uc_driver + 703105
+5   uc_driver                           0x00000001028becd4 uc_driver + 982228
+6   uc_driver                           0x000000010289ef1d uc_driver + 851741
+7   uc_driver                           0x00000001028bc250 uc_driver + 971344
+8   uc_driver                           0x000000010289ec93 uc_driver + 851091
+9   uc_driver                           0x000000010286dc79 uc_driver + 650361
+10  uc_driver                           0x000000010286e49e uc_driver + 652446
+11  uc_driver                           0x0000000102c6dff0 uc_driver + 4845552
+12  uc_driver                           0x0000000102c72f08 uc_driver + 4865800
+13  uc_driver                           0x0000000102c735d5 uc_driver + 4867541
+14  uc_driver                           0x0000000102c50c29 uc_driver + 4725801
+15  uc_driver                           0x0000000102c738c9 uc_driver + 4868297
+16  uc_driver                           0x0000000102c42b44 uc_driver + 4668228
+17  uc_driver                           0x0000000102c92da8 uc_driver + 4996520
+18  uc_driver                           0x0000000102c92fa7 uc_driver + 4997031
+19  uc_driver                           0x0000000102ca26ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001049ba278 uc_driver + 5096056
+1   uc_driver                           0x00000001049b1aaa uc_driver + 5061290
+2   uc_driver                           0x000000010453cfd0 uc_driver + 389072
+3   uc_driver                           0x00000001045899ab uc_driver + 702891
+4   uc_driver                           0x0000000104589a81 uc_driver + 703105
+5   uc_driver                           0x00000001045cdcd4 uc_driver + 982228
+6   uc_driver                           0x00000001045adf1d uc_driver + 851741
+7   uc_driver                           0x00000001045cb250 uc_driver + 971344
+8   uc_driver                           0x00000001045adc93 uc_driver + 851091
+9   uc_driver                           0x000000010457cc79 uc_driver + 650361
+10  uc_driver                           0x000000010457d49e uc_driver + 652446
+11  uc_driver                           0x000000010497cff0 uc_driver + 4845552
+12  uc_driver                           0x0000000104981f08 uc_driver + 4865800
+13  uc_driver                           0x00000001049825d5 uc_driver + 4867541
+14  uc_driver                           0x000000010495fc29 uc_driver + 4725801
+15  uc_driver                           0x00000001049828c9 uc_driver + 4868297
+16  uc_driver                           0x0000000104951b44 uc_driver + 4668228
+17  uc_driver                           0x00000001049a1da8 uc_driver + 4996520
+18  uc_driver                           0x00000001049a1fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001049b16ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000105433278 uc_driver + 5096056
+1   uc_driver                           0x000000010542aaaa uc_driver + 5061290
+2   uc_driver                           0x0000000104fb5fd0 uc_driver + 389072
+3   uc_driver                           0x00000001050029ab uc_driver + 702891
+4   uc_driver                           0x0000000105002a81 uc_driver + 703105
+5   uc_driver                           0x0000000105046cd4 uc_driver + 982228
+6   uc_driver                           0x0000000105026f1d uc_driver + 851741
+7   uc_driver                           0x0000000105044250 uc_driver + 971344
+8   uc_driver                           0x0000000105026c93 uc_driver + 851091
+9   uc_driver                           0x0000000104ff5c79 uc_driver + 650361
+10  uc_driver                           0x0000000104ff649e uc_driver + 652446
+11  uc_driver                           0x00000001053f5ff0 uc_driver + 4845552
+12  uc_driver                           0x00000001053faf08 uc_driver + 4865800
+13  uc_driver                           0x00000001053fb5d5 uc_driver + 4867541
+14  uc_driver                           0x00000001053d8c29 uc_driver + 4725801
+15  uc_driver                           0x00000001053fb8c9 uc_driver + 4868297
+16  uc_driver                           0x00000001053cab44 uc_driver + 4668228
+17  uc_driver                           0x000000010541ada8 uc_driver + 4996520
+18  uc_driver                           0x000000010541afa7 uc_driver + 4997031
+19  uc_driver                           0x000000010542a6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102ae9278 uc_driver + 5096056
+1   uc_driver                           0x0000000102ae0aaa uc_driver + 5061290
+2   uc_driver                           0x000000010266bfd0 uc_driver + 389072
+3   uc_driver                           0x00000001026b89ab uc_driver + 702891
+4   uc_driver                           0x00000001026b8a81 uc_driver + 703105
+5   uc_driver                           0x00000001026fccd4 uc_driver + 982228
+6   uc_driver                           0x00000001026dcf1d uc_driver + 851741
+7   uc_driver                           0x00000001026fa250 uc_driver + 971344
+8   uc_driver                           0x00000001026dcc93 uc_driver + 851091
+9   uc_driver                           0x00000001026abc79 uc_driver + 650361
+10  uc_driver                           0x00000001026ac49e uc_driver + 652446
+11  uc_driver                           0x0000000102aabff0 uc_driver + 4845552
+12  uc_driver                           0x0000000102ab0f08 uc_driver + 4865800
+13  uc_driver                           0x0000000102ab15d5 uc_driver + 4867541
+14  uc_driver                           0x0000000102a8ec29 uc_driver + 4725801
+15  uc_driver                           0x0000000102ab18c9 uc_driver + 4868297
+16  uc_driver                           0x0000000102a80b44 uc_driver + 4668228
+17  uc_driver                           0x0000000102ad0da8 uc_driver + 4996520
+18  uc_driver                           0x0000000102ad0fa7 uc_driver + 4997031
+19  uc_driver                           0x0000000102ae06ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001028f3278 uc_driver + 5096056
+1   uc_driver                           0x00000001028eaaaa uc_driver + 5061290
+2   uc_driver                           0x0000000102475fd0 uc_driver + 389072
+3   uc_driver                           0x00000001024c29ab uc_driver + 702891
+4   uc_driver                           0x00000001024c2a81 uc_driver + 703105
+5   uc_driver                           0x0000000102506cd4 uc_driver + 982228
+6   uc_driver                           0x00000001024e6f1d uc_driver + 851741
+7   uc_driver                           0x0000000102504250 uc_driver + 971344
+8   uc_driver                           0x00000001024e6c93 uc_driver + 851091
+9   uc_driver                           0x00000001024b5c79 uc_driver + 650361
+10  uc_driver                           0x00000001024b649e uc_driver + 652446
+11  uc_driver                           0x00000001028b5ff0 uc_driver + 4845552
+12  uc_driver                           0x00000001028baf08 uc_driver + 4865800
+13  uc_driver                           0x00000001028bb5d5 uc_driver + 4867541
+14  uc_driver                           0x0000000102898c29 uc_driver + 4725801
+15  uc_driver                           0x00000001028bb8c9 uc_driver + 4868297
+16  uc_driver                           0x000000010288ab44 uc_driver + 4668228
+17  uc_driver                           0x00000001028dada8 uc_driver + 4996520
+18  uc_driver                           0x00000001028dafa7 uc_driver + 4997031
+19  uc_driver                           0x00000001028ea6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001026fd278 uc_driver + 5096056
+1   uc_driver                           0x00000001026f4aaa uc_driver + 5061290
+2   uc_driver                           0x000000010227ffd0 uc_driver + 389072
+3   uc_driver                           0x00000001022cc9ab uc_driver + 702891
+4   uc_driver                           0x00000001022cca81 uc_driver + 703105
+5   uc_driver                           0x0000000102310cd4 uc_driver + 982228
+6   uc_driver                           0x00000001022f0f1d uc_driver + 851741
+7   uc_driver                           0x000000010230e250 uc_driver + 971344
+8   uc_driver                           0x00000001022f0c93 uc_driver + 851091
+9   uc_driver                           0x00000001022bfc79 uc_driver + 650361
+10  uc_driver                           0x00000001022c049e uc_driver + 652446
+11  uc_driver                           0x00000001026bfff0 uc_driver + 4845552
+12  uc_driver                           0x00000001026c4f08 uc_driver + 4865800
+13  uc_driver                           0x00000001026c55d5 uc_driver + 4867541
+14  uc_driver                           0x00000001026a2c29 uc_driver + 4725801
+15  uc_driver                           0x00000001026c58c9 uc_driver + 4868297
+16  uc_driver                           0x0000000102694b44 uc_driver + 4668228
+17  uc_driver                           0x00000001026e4da8 uc_driver + 4996520
+18  uc_driver                           0x00000001026e4fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001026f46ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000104a3e278 uc_driver + 5096056
+1   uc_driver                           0x0000000104a35aaa uc_driver + 5061290
+2   uc_driver                           0x00000001045c0fd0 uc_driver + 389072
+3   uc_driver                           0x000000010460d9ab uc_driver + 702891
+4   uc_driver                           0x000000010460da81 uc_driver + 703105
+5   uc_driver                           0x0000000104651cd4 uc_driver + 982228
+6   uc_driver                           0x0000000104631f1d uc_driver + 851741
+7   uc_driver                           0x000000010464f250 uc_driver + 971344
+8   uc_driver                           0x0000000104631c93 uc_driver + 851091
+9   uc_driver                           0x0000000104600c79 uc_driver + 650361
+10  uc_driver                           0x000000010460149e uc_driver + 652446
+11  uc_driver                           0x0000000104a00ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000104a05f08 uc_driver + 4865800
+13  uc_driver                           0x0000000104a065d5 uc_driver + 4867541
+14  uc_driver                           0x00000001049e3c29 uc_driver + 4725801
+15  uc_driver                           0x0000000104a068c9 uc_driver + 4868297
+16  uc_driver                           0x00000001049d5b44 uc_driver + 4668228
+17  uc_driver                           0x0000000104a25da8 uc_driver + 4996520
+18  uc_driver                           0x0000000104a25fa7 uc_driver + 4997031
+19  uc_driver                           0x0000000104a356ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001030a2278 uc_driver + 5096056
+1   uc_driver                           0x0000000103099aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102c24fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102c719ab uc_driver + 702891
+4   uc_driver                           0x0000000102c71a81 uc_driver + 703105
+5   uc_driver                           0x0000000102cb5cd4 uc_driver + 982228
+6   uc_driver                           0x0000000102c95f1d uc_driver + 851741
+7   uc_driver                           0x0000000102cb3250 uc_driver + 971344
+8   uc_driver                           0x0000000102c95c93 uc_driver + 851091
+9   uc_driver                           0x0000000102c64c79 uc_driver + 650361
+10  uc_driver                           0x0000000102c6549e uc_driver + 652446
+11  uc_driver                           0x0000000103064ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000103069f08 uc_driver + 4865800
+13  uc_driver                           0x000000010306a5d5 uc_driver + 4867541
+14  uc_driver                           0x0000000103047c29 uc_driver + 4725801
+15  uc_driver                           0x000000010306a8c9 uc_driver + 4868297
+16  uc_driver                           0x0000000103039b44 uc_driver + 4668228
+17  uc_driver                           0x0000000103089da8 uc_driver + 4996520
+18  uc_driver                           0x0000000103089fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001030996ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000105455278 uc_driver + 5096056
+1   uc_driver                           0x000000010544caaa uc_driver + 5061290
+2   uc_driver                           0x0000000104fd7fd0 uc_driver + 389072
+3   uc_driver                           0x0000000104fc084a uc_driver + 292938
+4   uc_driver                           0x0000000104fc056a uc_driver + 292202
+5   uc_driver                           0x0000000104fbe888 uc_driver + 284808
+6   uc_driver                           0x0000000104fbef2f uc_driver + 286511
+7   uc_driver                           0x0000000104fcdf8b uc_driver + 348043
+8   uc_driver                           0x0000000104fe42bd uc_driver + 438973
+9   uc_driver                           0x0000000104fe958b uc_driver + 460171
+10  uc_driver                           0x0000000104fbf5b7 uc_driver + 288183
+11  uc_driver                           0x0000000104fe411f uc_driver + 438559
+12  uc_driver                           0x000000010506613c uc_driver + 971068
+13  uc_driver                           0x0000000105048c93 uc_driver + 851091
+14  uc_driver                           0x0000000105017c79 uc_driver + 650361
+15  uc_driver                           0x000000010501849e uc_driver + 652446
+16  uc_driver                           0x0000000105417ff0 uc_driver + 4845552
+17  uc_driver                           0x000000010541cf08 uc_driver + 4865800
+18  uc_driver                           0x000000010541d5d5 uc_driver + 4867541
+19  uc_driver                           0x00000001053fac29 uc_driver + 4725801
+20  uc_driver                           0x000000010541d8c9 uc_driver + 4868297
+21  uc_driver                           0x00000001053ecb44 uc_driver + 4668228
+22  uc_driver                           0x000000010543cda8 uc_driver + 4996520
+23  uc_driver                           0x000000010543cfa7 uc_driver + 4997031
+24  uc_driver                           0x000000010544c6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x000000010517c278 uc_driver + 5096056
+1   uc_driver                           0x0000000105173aaa uc_driver + 5061290
+2   uc_driver                           0x0000000104cfefd0 uc_driver + 389072
+3   uc_driver                           0x0000000104ce784a uc_driver + 292938
+4   uc_driver                           0x0000000104ce756a uc_driver + 292202
+5   uc_driver                           0x0000000104ce5888 uc_driver + 284808
+6   uc_driver                           0x0000000104ce5f2f uc_driver + 286511
+7   uc_driver                           0x0000000104cf4f8b uc_driver + 348043
+8   uc_driver                           0x0000000104d0b2bd uc_driver + 438973
+9   uc_driver                           0x0000000104d1058b uc_driver + 460171
+10  uc_driver                           0x0000000104ce65b7 uc_driver + 288183
+11  uc_driver                           0x0000000104d0b11f uc_driver + 438559
+12  uc_driver                           0x0000000104d8d13c uc_driver + 971068
+13  uc_driver                           0x0000000104d6fc93 uc_driver + 851091
+14  uc_driver                           0x0000000104d3ec79 uc_driver + 650361
+15  uc_driver                           0x0000000104d3f49e uc_driver + 652446
+16  uc_driver                           0x000000010513eff0 uc_driver + 4845552
+17  uc_driver                           0x0000000105143f08 uc_driver + 4865800
+18  uc_driver                           0x00000001051445d5 uc_driver + 4867541
+19  uc_driver                           0x0000000105121c29 uc_driver + 4725801
+20  uc_driver                           0x00000001051448c9 uc_driver + 4868297
+21  uc_driver                           0x0000000105113b44 uc_driver + 4668228
+22  uc_driver                           0x0000000105163da8 uc_driver + 4996520
+23  uc_driver                           0x0000000105163fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001051736ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000103277278 uc_driver + 5096056
+1   uc_driver                           0x000000010326eaaa uc_driver + 5061290
+2   uc_driver                           0x0000000102df9fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102de284a uc_driver + 292938
+4   uc_driver                           0x0000000102de256a uc_driver + 292202
+5   uc_driver                           0x0000000102de0888 uc_driver + 284808
+6   uc_driver                           0x0000000102de0f2f uc_driver + 286511
+7   uc_driver                           0x0000000102deff8b uc_driver + 348043
+8   uc_driver                           0x0000000102e062bd uc_driver + 438973
+9   uc_driver                           0x0000000102e0b58b uc_driver + 460171
+10  uc_driver                           0x0000000102de15b7 uc_driver + 288183
+11  uc_driver                           0x0000000102e0611f uc_driver + 438559
+12  uc_driver                           0x0000000102e8813c uc_driver + 971068
+13  uc_driver                           0x0000000102e6ac93 uc_driver + 851091
+14  uc_driver                           0x0000000102e39c79 uc_driver + 650361
+15  uc_driver                           0x0000000102e3a49e uc_driver + 652446
+16  uc_driver                           0x0000000103239ff0 uc_driver + 4845552
+17  uc_driver                           0x000000010323ef08 uc_driver + 4865800
+18  uc_driver                           0x000000010323f5d5 uc_driver + 4867541
+19  uc_driver                           0x000000010321cc29 uc_driver + 4725801
+20  uc_driver                           0x000000010323f8c9 uc_driver + 4868297
+21  uc_driver                           0x000000010320eb44 uc_driver + 4668228
+22  uc_driver                           0x000000010325eda8 uc_driver + 4996520
+23  uc_driver                           0x000000010325efa7 uc_driver + 4997031
+24  uc_driver                           0x000000010326e6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x000000010451d278 uc_driver + 5096056
+1   uc_driver                           0x0000000104514aaa uc_driver + 5061290
+2   uc_driver                           0x000000010409ffd0 uc_driver + 389072
+3   uc_driver                           0x000000010408884a uc_driver + 292938
+4   uc_driver                           0x000000010408856a uc_driver + 292202
+5   uc_driver                           0x0000000104086888 uc_driver + 284808
+6   uc_driver                           0x0000000104086f2f uc_driver + 286511
+7   uc_driver                           0x0000000104095f8b uc_driver + 348043
+8   uc_driver                           0x00000001040ac2bd uc_driver + 438973
+9   uc_driver                           0x00000001040b158b uc_driver + 460171
+10  uc_driver                           0x00000001040875b7 uc_driver + 288183
+11  uc_driver                           0x00000001040ac11f uc_driver + 438559
+12  uc_driver                           0x000000010412e13c uc_driver + 971068
+13  uc_driver                           0x0000000104110c93 uc_driver + 851091
+14  uc_driver                           0x00000001040dfc79 uc_driver + 650361
+15  uc_driver                           0x00000001040e049e uc_driver + 652446
+16  uc_driver                           0x00000001044dfff0 uc_driver + 4845552
+17  uc_driver                           0x00000001044e4f08 uc_driver + 4865800
+18  uc_driver                           0x00000001044e55d5 uc_driver + 4867541
+19  uc_driver                           0x00000001044c2c29 uc_driver + 4725801
+20  uc_driver                           0x00000001044e58c9 uc_driver + 4868297
+21  uc_driver                           0x00000001044b4b44 uc_driver + 4668228
+22  uc_driver                           0x0000000104504da8 uc_driver + 4996520
+23  uc_driver                           0x0000000104504fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001045146ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 2/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000105455278 uc_driver + 5096056
+1   uc_driver                           0x000000010544caaa uc_driver + 5061290
+2   uc_driver                           0x0000000104fd7fd0 uc_driver + 389072
+3   uc_driver                           0x0000000104fc084a uc_driver + 292938
+4   uc_driver                           0x0000000104fc056a uc_driver + 292202
+5   uc_driver                           0x0000000104fbe888 uc_driver + 284808
+6   uc_driver                           0x0000000104fbef2f uc_driver + 286511
+7   uc_driver                           0x0000000104fcdf8b uc_driver + 348043
+8   uc_driver                           0x0000000104fe42bd uc_driver + 438973
+9   uc_driver                           0x0000000104fe958b uc_driver + 460171
+10  uc_driver                           0x0000000104fbf5b7 uc_driver + 288183
+11  uc_driver                           0x0000000104fe411f uc_driver + 438559
+12  uc_driver                           0x000000010506613c uc_driver + 971068
+13  uc_driver                           0x0000000105048c93 uc_driver + 851091
+14  uc_driver                           0x0000000105017c79 uc_driver + 650361
+15  uc_driver                           0x000000010501849e uc_driver + 652446
+16  uc_driver                           0x0000000105417ff0 uc_driver + 4845552
+17  uc_driver                           0x000000010541cf08 uc_driver + 4865800
+18  uc_driver                           0x000000010541d5d5 uc_driver + 4867541
+19  uc_driver                           0x00000001053fac29 uc_driver + 4725801
+20  uc_driver                           0x000000010541d8c9 uc_driver + 4868297
+21  uc_driver                           0x00000001053ecb44 uc_driver + 4668228
+22  uc_driver                           0x000000010543cda8 uc_driver + 4996520
+23  uc_driver                           0x000000010543cfa7 uc_driver + 4997031
+24  uc_driver                           0x000000010544c6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 3/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000105455278 uc_driver + 5096056
+1   uc_driver                           0x000000010544caaa uc_driver + 5061290
+2   uc_driver                           0x0000000104fd7fd0 uc_driver + 389072
+3   uc_driver                           0x0000000104fc084a uc_driver + 292938
+4   uc_driver                           0x0000000104fc056a uc_driver + 292202
+5   uc_driver                           0x0000000104fbe888 uc_driver + 284808
+6   uc_driver                           0x0000000104fbef2f uc_driver + 286511
+7   uc_driver                           0x0000000104fcdf8b uc_driver + 348043
+8   uc_driver                           0x0000000104fe42bd uc_driver + 438973
+9   uc_driver                           0x0000000104fe958b uc_driver + 460171
+10  uc_driver                           0x0000000104fbf5b7 uc_driver + 288183
+11  uc_driver                           0x0000000104fe411f uc_driver + 438559
+12  uc_driver                           0x000000010506613c uc_driver + 971068
+13  uc_driver                           0x0000000105048c93 uc_driver + 851091
+14  uc_driver                           0x0000000105017c79 uc_driver + 650361
+15  uc_driver                           0x000000010501849e uc_driver + 652446
+16  uc_driver                           0x0000000105417ff0 uc_driver + 4845552
+17  uc_driver                           0x000000010541cf08 uc_driver + 4865800
+18  uc_driver                           0x000000010541d5d5 uc_driver + 4867541
+19  uc_driver                           0x00000001053fac29 uc_driver + 4725801
+20  uc_driver                           0x000000010541d8c9 uc_driver + 4868297
+21  uc_driver                           0x00000001053ecb44 uc_driver + 4668228
+22  uc_driver                           0x000000010543cda8 uc_driver + 4996520
+23  uc_driver                           0x000000010543cfa7 uc_driver + 4997031
+24  uc_driver                           0x000000010544c6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: No active exception to reraise
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001045b7278 uc_driver + 5096056
+1   uc_driver                           0x00000001045aeaaa uc_driver + 5061290
+2   uc_driver                           0x0000000104139fd0 uc_driver + 389072
+3   uc_driver                           0x000000010412284a uc_driver + 292938
+4   uc_driver                           0x000000010412256a uc_driver + 292202
+5   uc_driver                           0x0000000104120888 uc_driver + 284808
+6   uc_driver                           0x0000000104120f2f uc_driver + 286511
+7   uc_driver                           0x000000010412ff8b uc_driver + 348043
+8   uc_driver                           0x00000001041462bd uc_driver + 438973
+9   uc_driver                           0x000000010414b58b uc_driver + 460171
+10  uc_driver                           0x00000001041215b7 uc_driver + 288183
+11  uc_driver                           0x000000010414611f uc_driver + 438559
+12  uc_driver                           0x00000001041c813c uc_driver + 971068
+13  uc_driver                           0x00000001041aac93 uc_driver + 851091
+14  uc_driver                           0x0000000104179c79 uc_driver + 650361
+15  uc_driver                           0x000000010417a49e uc_driver + 652446
+16  uc_driver                           0x0000000104579ff0 uc_driver + 4845552
+17  uc_driver                           0x000000010457ef08 uc_driver + 4865800
+18  uc_driver                           0x000000010457f5d5 uc_driver + 4867541
+19  uc_driver                           0x000000010455cc29 uc_driver + 4725801
+20  uc_driver                           0x000000010457f8c9 uc_driver + 4868297
+21  uc_driver                           0x000000010454eb44 uc_driver + 4668228
+22  uc_driver                           0x000000010459eda8 uc_driver + 4996520
+23  uc_driver                           0x000000010459efa7 uc_driver + 4997031
+24  uc_driver                           0x00000001045ae6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001027e0278 uc_driver + 5096056
+1   uc_driver                           0x00000001027d7aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102362fd0 uc_driver + 389072
+3   uc_driver                           0x000000010234b84a uc_driver + 292938
+4   uc_driver                           0x000000010234b56a uc_driver + 292202
+5   uc_driver                           0x0000000102349888 uc_driver + 284808
+6   uc_driver                           0x0000000102349f2f uc_driver + 286511
+7   uc_driver                           0x0000000102358f8b uc_driver + 348043
+8   uc_driver                           0x000000010236f2bd uc_driver + 438973
+9   uc_driver                           0x000000010237458b uc_driver + 460171
+10  uc_driver                           0x000000010234a5b7 uc_driver + 288183
+11  uc_driver                           0x000000010236f11f uc_driver + 438559
+12  uc_driver                           0x00000001023f113c uc_driver + 971068
+13  uc_driver                           0x00000001023d3c93 uc_driver + 851091
+14  uc_driver                           0x00000001023a2c79 uc_driver + 650361
+15  uc_driver                           0x00000001023a349e uc_driver + 652446
+16  uc_driver                           0x00000001027a2ff0 uc_driver + 4845552
+17  uc_driver                           0x00000001027a7f08 uc_driver + 4865800
+18  uc_driver                           0x00000001027a85d5 uc_driver + 4867541
+19  uc_driver                           0x0000000102785c29 uc_driver + 4725801
+20  uc_driver                           0x00000001027a88c9 uc_driver + 4868297
+21  uc_driver                           0x0000000102777b44 uc_driver + 4668228
+22  uc_driver                           0x00000001027c7da8 uc_driver + 4996520
+23  uc_driver                           0x00000001027c7fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001027d76ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001031f9278 uc_driver + 5096056
+1   uc_driver                           0x00000001031f0aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102d7bfd0 uc_driver + 389072
+3   uc_driver                           0x0000000102d6484a uc_driver + 292938
+4   uc_driver                           0x0000000102d6456a uc_driver + 292202
+5   uc_driver                           0x0000000102d62888 uc_driver + 284808
+6   uc_driver                           0x0000000102d62f2f uc_driver + 286511
+7   uc_driver                           0x0000000102d71f8b uc_driver + 348043
+8   uc_driver                           0x0000000102d882bd uc_driver + 438973
+9   uc_driver                           0x0000000102d8d58b uc_driver + 460171
+10  uc_driver                           0x0000000102d635b7 uc_driver + 288183
+11  uc_driver                           0x0000000102d8811f uc_driver + 438559
+12  uc_driver                           0x0000000102e0a13c uc_driver + 971068
+13  uc_driver                           0x0000000102decc93 uc_driver + 851091
+14  uc_driver                           0x0000000102dbbc79 uc_driver + 650361
+15  uc_driver                           0x0000000102dbc49e uc_driver + 652446
+16  uc_driver                           0x00000001031bbff0 uc_driver + 4845552
+17  uc_driver                           0x00000001031c0f08 uc_driver + 4865800
+18  uc_driver                           0x00000001031c15d5 uc_driver + 4867541
+19  uc_driver                           0x000000010319ec29 uc_driver + 4725801
+20  uc_driver                           0x00000001031c18c9 uc_driver + 4868297
+21  uc_driver                           0x0000000103190b44 uc_driver + 4668228
+22  uc_driver                           0x00000001031e0da8 uc_driver + 4996520
+23  uc_driver                           0x00000001031e0fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001031f06ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001047e2278 uc_driver + 5096056
+1   uc_driver                           0x00000001047d9aaa uc_driver + 5061290
+2   uc_driver                           0x0000000104364fd0 uc_driver + 389072
+3   uc_driver                           0x000000010434d84a uc_driver + 292938
+4   uc_driver                           0x000000010434d56a uc_driver + 292202
+5   uc_driver                           0x000000010434b888 uc_driver + 284808
+6   uc_driver                           0x000000010434bf2f uc_driver + 286511
+7   uc_driver                           0x000000010435af8b uc_driver + 348043
+8   uc_driver                           0x00000001043712bd uc_driver + 438973
+9   uc_driver                           0x000000010437658b uc_driver + 460171
+10  uc_driver                           0x000000010434c5b7 uc_driver + 288183
+11  uc_driver                           0x000000010437111f uc_driver + 438559
+12  uc_driver                           0x00000001043f313c uc_driver + 971068
+13  uc_driver                           0x00000001043d5c93 uc_driver + 851091
+14  uc_driver                           0x00000001043a4c79 uc_driver + 650361
+15  uc_driver                           0x00000001043a549e uc_driver + 652446
+16  uc_driver                           0x00000001047a4ff0 uc_driver + 4845552
+17  uc_driver                           0x00000001047a9f08 uc_driver + 4865800
+18  uc_driver                           0x00000001047aa5d5 uc_driver + 4867541
+19  uc_driver                           0x0000000104787c29 uc_driver + 4725801
+20  uc_driver                           0x00000001047aa8c9 uc_driver + 4868297
+21  uc_driver                           0x0000000104779b44 uc_driver + 4668228
+22  uc_driver                           0x00000001047c9da8 uc_driver + 4996520
+23  uc_driver                           0x00000001047c9fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001047d96ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000104718278 uc_driver + 5096056
+1   uc_driver                           0x000000010470faaa uc_driver + 5061290
+2   uc_driver                           0x000000010429afd0 uc_driver + 389072
+3   uc_driver                           0x000000010428384a uc_driver + 292938
+4   uc_driver                           0x000000010428356a uc_driver + 292202
+5   uc_driver                           0x0000000104281888 uc_driver + 284808
+6   uc_driver                           0x0000000104281f2f uc_driver + 286511
+7   uc_driver                           0x0000000104290f8b uc_driver + 348043
+8   uc_driver                           0x00000001042a72bd uc_driver + 438973
+9   uc_driver                           0x00000001042ac58b uc_driver + 460171
+10  uc_driver                           0x00000001042825b7 uc_driver + 288183
+11  uc_driver                           0x00000001042a711f uc_driver + 438559
+12  uc_driver                           0x000000010432913c uc_driver + 971068
+13  uc_driver                           0x000000010430bc93 uc_driver + 851091
+14  uc_driver                           0x00000001042dac79 uc_driver + 650361
+15  uc_driver                           0x00000001042db49e uc_driver + 652446
+16  uc_driver                           0x00000001046daff0 uc_driver + 4845552
+17  uc_driver                           0x00000001046dff08 uc_driver + 4865800
+18  uc_driver                           0x00000001046e05d5 uc_driver + 4867541
+19  uc_driver                           0x00000001046bdc29 uc_driver + 4725801
+20  uc_driver                           0x00000001046e08c9 uc_driver + 4868297
+21  uc_driver                           0x00000001046afb44 uc_driver + 4668228
+22  uc_driver                           0x00000001046ffda8 uc_driver + 4996520
+23  uc_driver                           0x00000001046fffa7 uc_driver + 4997031
+24  uc_driver                           0x000000010470f6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x000000010091e278 uc_driver + 5096056
+1   uc_driver                           0x0000000100915aaa uc_driver + 5061290
+2   uc_driver                           0x00000001004a0fd0 uc_driver + 389072
+3   uc_driver                           0x000000010048984a uc_driver + 292938
+4   uc_driver                           0x000000010048956a uc_driver + 292202
+5   uc_driver                           0x0000000100487888 uc_driver + 284808
+6   uc_driver                           0x0000000100487f2f uc_driver + 286511
+7   uc_driver                           0x0000000100496f8b uc_driver + 348043
+8   uc_driver                           0x00000001004ad2bd uc_driver + 438973
+9   uc_driver                           0x00000001004b258b uc_driver + 460171
+10  uc_driver                           0x00000001004885b7 uc_driver + 288183
+11  uc_driver                           0x00000001004ad11f uc_driver + 438559
+12  uc_driver                           0x000000010052f13c uc_driver + 971068
+13  uc_driver                           0x0000000100511c93 uc_driver + 851091
+14  uc_driver                           0x00000001004e0c79 uc_driver + 650361
+15  uc_driver                           0x00000001004e149e uc_driver + 652446
+16  uc_driver                           0x00000001008e0ff0 uc_driver + 4845552
+17  uc_driver                           0x00000001008e5f08 uc_driver + 4865800
+18  uc_driver                           0x00000001008e65d5 uc_driver + 4867541
+19  uc_driver                           0x00000001008c3c29 uc_driver + 4725801
+20  uc_driver                           0x00000001008e68c9 uc_driver + 4868297
+21  uc_driver                           0x00000001008b5b44 uc_driver + 4668228
+22  uc_driver                           0x0000000100905da8 uc_driver + 4996520
+23  uc_driver                           0x0000000100905fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001009156ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000102d80278 uc_driver + 5096056
+1   uc_driver                           0x0000000102d77aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102902fd0 uc_driver + 389072
+3   uc_driver                           0x00000001028eb84a uc_driver + 292938
+4   uc_driver                           0x00000001028eb56a uc_driver + 292202
+5   uc_driver                           0x00000001028e9888 uc_driver + 284808
+6   uc_driver                           0x00000001028e9f2f uc_driver + 286511
+7   uc_driver                           0x00000001028f8f8b uc_driver + 348043
+8   uc_driver                           0x000000010290f2bd uc_driver + 438973
+9   uc_driver                           0x000000010291458b uc_driver + 460171
+10  uc_driver                           0x00000001028ea5b7 uc_driver + 288183
+11  uc_driver                           0x000000010290f11f uc_driver + 438559
+12  uc_driver                           0x000000010299113c uc_driver + 971068
+13  uc_driver                           0x0000000102973c93 uc_driver + 851091
+14  uc_driver                           0x0000000102942c79 uc_driver + 650361
+15  uc_driver                           0x000000010294349e uc_driver + 652446
+16  uc_driver                           0x0000000102d42ff0 uc_driver + 4845552
+17  uc_driver                           0x0000000102d47f08 uc_driver + 4865800
+18  uc_driver                           0x0000000102d485d5 uc_driver + 4867541
+19  uc_driver                           0x0000000102d25c29 uc_driver + 4725801
+20  uc_driver                           0x0000000102d488c9 uc_driver + 4868297
+21  uc_driver                           0x0000000102d17b44 uc_driver + 4668228
+22  uc_driver                           0x0000000102d67da8 uc_driver + 4996520
+23  uc_driver                           0x0000000102d67fa7 uc_driver + 4997031
+24  uc_driver                           0x0000000102d776ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000104b82278 uc_driver + 5096056
+1   uc_driver                           0x0000000104b79aaa uc_driver + 5061290
+2   uc_driver                           0x0000000104704fd0 uc_driver + 389072
+3   uc_driver                           0x00000001046ed84a uc_driver + 292938
+4   uc_driver                           0x00000001046ed56a uc_driver + 292202
+5   uc_driver                           0x00000001046eb888 uc_driver + 284808
+6   uc_driver                           0x00000001046ebf2f uc_driver + 286511
+7   uc_driver                           0x00000001046faf8b uc_driver + 348043
+8   uc_driver                           0x00000001047112bd uc_driver + 438973
+9   uc_driver                           0x000000010471658b uc_driver + 460171
+10  uc_driver                           0x00000001046ec5b7 uc_driver + 288183
+11  uc_driver                           0x000000010471111f uc_driver + 438559
+12  uc_driver                           0x000000010479313c uc_driver + 971068
+13  uc_driver                           0x0000000104775c93 uc_driver + 851091
+14  uc_driver                           0x0000000104744c79 uc_driver + 650361
+15  uc_driver                           0x000000010474549e uc_driver + 652446
+16  uc_driver                           0x0000000104b44ff0 uc_driver + 4845552
+17  uc_driver                           0x0000000104b49f08 uc_driver + 4865800
+18  uc_driver                           0x0000000104b4a5d5 uc_driver + 4867541
+19  uc_driver                           0x0000000104b27c29 uc_driver + 4725801
+20  uc_driver                           0x0000000104b4a8c9 uc_driver + 4868297
+21  uc_driver                           0x0000000104b19b44 uc_driver + 4668228
+22  uc_driver                           0x0000000104b69da8 uc_driver + 4996520
+23  uc_driver                           0x0000000104b69fa7 uc_driver + 4997031
+24  uc_driver                           0x0000000104b796ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x000000010278e278 uc_driver + 5096056
+1   uc_driver                           0x0000000102785aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102310fd0 uc_driver + 389072
+3   uc_driver                           0x00000001022f984a uc_driver + 292938
+4   uc_driver                           0x00000001022f956a uc_driver + 292202
+5   uc_driver                           0x00000001022f7888 uc_driver + 284808
+6   uc_driver                           0x00000001022f7f2f uc_driver + 286511
+7   uc_driver                           0x0000000102306f8b uc_driver + 348043
+8   uc_driver                           0x000000010231d2bd uc_driver + 438973
+9   uc_driver                           0x000000010232258b uc_driver + 460171
+10  uc_driver                           0x00000001022f85b7 uc_driver + 288183
+11  uc_driver                           0x000000010231d11f uc_driver + 438559
+12  uc_driver                           0x000000010239f13c uc_driver + 971068
+13  uc_driver                           0x0000000102381c93 uc_driver + 851091
+14  uc_driver                           0x0000000102350c79 uc_driver + 650361
+15  uc_driver                           0x000000010235149e uc_driver + 652446
+16  uc_driver                           0x0000000102750ff0 uc_driver + 4845552
+17  uc_driver                           0x0000000102755f08 uc_driver + 4865800
+18  uc_driver                           0x00000001027565d5 uc_driver + 4867541
+19  uc_driver                           0x0000000102733c29 uc_driver + 4725801
+20  uc_driver                           0x00000001027568c9 uc_driver + 4868297
+21  uc_driver                           0x0000000102725b44 uc_driver + 4668228
+22  uc_driver                           0x0000000102775da8 uc_driver + 4996520
+23  uc_driver                           0x0000000102775fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001027856ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000103188278 uc_driver + 5096056
+1   uc_driver                           0x000000010317faaa uc_driver + 5061290
+2   uc_driver                           0x0000000102d0afd0 uc_driver + 389072
+3   uc_driver                           0x0000000102cf384a uc_driver + 292938
+4   uc_driver                           0x0000000102cf356a uc_driver + 292202
+5   uc_driver                           0x0000000102cf1888 uc_driver + 284808
+6   uc_driver                           0x0000000102cf1f2f uc_driver + 286511
+7   uc_driver                           0x0000000102d00f8b uc_driver + 348043
+8   uc_driver                           0x0000000102d172bd uc_driver + 438973
+9   uc_driver                           0x0000000102d1c58b uc_driver + 460171
+10  uc_driver                           0x0000000102cf25b7 uc_driver + 288183
+11  uc_driver                           0x0000000102d1711f uc_driver + 438559
+12  uc_driver                           0x0000000102d9913c uc_driver + 971068
+13  uc_driver                           0x0000000102d7bc93 uc_driver + 851091
+14  uc_driver                           0x0000000102d4ac79 uc_driver + 650361
+15  uc_driver                           0x0000000102d4b49e uc_driver + 652446
+16  uc_driver                           0x000000010314aff0 uc_driver + 4845552
+17  uc_driver                           0x000000010314ff08 uc_driver + 4865800
+18  uc_driver                           0x00000001031505d5 uc_driver + 4867541
+19  uc_driver                           0x000000010312dc29 uc_driver + 4725801
+20  uc_driver                           0x00000001031508c9 uc_driver + 4868297
+21  uc_driver                           0x000000010311fb44 uc_driver + 4668228
+22  uc_driver                           0x000000010316fda8 uc_driver + 4996520
+23  uc_driver                           0x000000010316ffa7 uc_driver + 4997031
+24  uc_driver                           0x000000010317f6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000103420278 uc_driver + 5096056
+1   uc_driver                           0x0000000103417aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102fa2fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102f8b84a uc_driver + 292938
+4   uc_driver                           0x0000000102f8b56a uc_driver + 292202
+5   uc_driver                           0x0000000102f89888 uc_driver + 284808
+6   uc_driver                           0x0000000102f89f2f uc_driver + 286511
+7   uc_driver                           0x0000000102f98f8b uc_driver + 348043
+8   uc_driver                           0x0000000102faf2bd uc_driver + 438973
+9   uc_driver                           0x0000000102fb458b uc_driver + 460171
+10  uc_driver                           0x0000000102f8a5b7 uc_driver + 288183
+11  uc_driver                           0x0000000102faf11f uc_driver + 438559
+12  uc_driver                           0x000000010303113c uc_driver + 971068
+13  uc_driver                           0x0000000103013c93 uc_driver + 851091
+14  uc_driver                           0x0000000102fe2c79 uc_driver + 650361
+15  uc_driver                           0x0000000102fe349e uc_driver + 652446
+16  uc_driver                           0x00000001033e2ff0 uc_driver + 4845552
+17  uc_driver                           0x00000001033e7f08 uc_driver + 4865800
+18  uc_driver                           0x00000001033e85d5 uc_driver + 4867541
+19  uc_driver                           0x00000001033c5c29 uc_driver + 4725801
+20  uc_driver                           0x00000001033e88c9 uc_driver + 4868297
+21  uc_driver                           0x00000001033b7b44 uc_driver + 4668228
+22  uc_driver                           0x0000000103407da8 uc_driver + 4996520
+23  uc_driver                           0x0000000103407fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001034176ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x000000010062d278 uc_driver + 5096056
+1   uc_driver                           0x0000000100624aaa uc_driver + 5061290
+2   uc_driver                           0x00000001001affd0 uc_driver + 389072
+3   uc_driver                           0x000000010019884a uc_driver + 292938
+4   uc_driver                           0x000000010019856a uc_driver + 292202
+5   uc_driver                           0x0000000100196888 uc_driver + 284808
+6   uc_driver                           0x0000000100196f2f uc_driver + 286511
+7   uc_driver                           0x00000001001a5f8b uc_driver + 348043
+8   uc_driver                           0x00000001001bc2bd uc_driver + 438973
+9   uc_driver                           0x00000001001c158b uc_driver + 460171
+10  uc_driver                           0x00000001001975b7 uc_driver + 288183
+11  uc_driver                           0x00000001001bc11f uc_driver + 438559
+12  uc_driver                           0x000000010023e13c uc_driver + 971068
+13  uc_driver                           0x0000000100220c93 uc_driver + 851091
+14  uc_driver                           0x00000001001efc79 uc_driver + 650361
+15  uc_driver                           0x00000001001f049e uc_driver + 652446
+16  uc_driver                           0x00000001005efff0 uc_driver + 4845552
+17  uc_driver                           0x00000001005f4f08 uc_driver + 4865800
+18  uc_driver                           0x00000001005f55d5 uc_driver + 4867541
+19  uc_driver                           0x00000001005d2c29 uc_driver + 4725801
+20  uc_driver                           0x00000001005f58c9 uc_driver + 4868297
+21  uc_driver                           0x00000001005c4b44 uc_driver + 4668228
+22  uc_driver                           0x0000000100614da8 uc_driver + 4996520
+23  uc_driver                           0x0000000100614fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001006246ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000100c70278 uc_driver + 5096056
+1   uc_driver                           0x0000000100c67aaa uc_driver + 5061290
+2   uc_driver                           0x00000001007f2fd0 uc_driver + 389072
+3   uc_driver                           0x00000001007db84a uc_driver + 292938
+4   uc_driver                           0x00000001007db56a uc_driver + 292202
+5   uc_driver                           0x00000001007d9888 uc_driver + 284808
+6   uc_driver                           0x00000001007d9f2f uc_driver + 286511
+7   uc_driver                           0x00000001007e8f8b uc_driver + 348043
+8   uc_driver                           0x00000001007ff2bd uc_driver + 438973
+9   uc_driver                           0x000000010080458b uc_driver + 460171
+10  uc_driver                           0x00000001007da5b7 uc_driver + 288183
+11  uc_driver                           0x00000001007ff11f uc_driver + 438559
+12  uc_driver                           0x000000010088113c uc_driver + 971068
+13  uc_driver                           0x0000000100863c93 uc_driver + 851091
+14  uc_driver                           0x0000000100832c79 uc_driver + 650361
+15  uc_driver                           0x000000010083349e uc_driver + 652446
+16  uc_driver                           0x0000000100c32ff0 uc_driver + 4845552
+17  uc_driver                           0x0000000100c37f08 uc_driver + 4865800
+18  uc_driver                           0x0000000100c385d5 uc_driver + 4867541
+19  uc_driver                           0x0000000100c15c29 uc_driver + 4725801
+20  uc_driver                           0x0000000100c388c9 uc_driver + 4868297
+21  uc_driver                           0x0000000100c07b44 uc_driver + 4668228
+22  uc_driver                           0x0000000100c57da8 uc_driver + 4996520
+23  uc_driver                           0x0000000100c57fa7 uc_driver + 4997031
+24  uc_driver                           0x0000000100c676ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000102656278 uc_driver + 5096056
+1   uc_driver                           0x000000010264daaa uc_driver + 5061290
+2   uc_driver                           0x00000001021d8fd0 uc_driver + 389072
+3   uc_driver                           0x00000001021c184a uc_driver + 292938
+4   uc_driver                           0x00000001021c156a uc_driver + 292202
+5   uc_driver                           0x00000001021bf888 uc_driver + 284808
+6   uc_driver                           0x00000001021bff2f uc_driver + 286511
+7   uc_driver                           0x00000001021cef8b uc_driver + 348043
+8   uc_driver                           0x00000001021e52bd uc_driver + 438973
+9   uc_driver                           0x00000001021ea58b uc_driver + 460171
+10  uc_driver                           0x00000001021c05b7 uc_driver + 288183
+11  uc_driver                           0x00000001021e511f uc_driver + 438559
+12  uc_driver                           0x000000010226713c uc_driver + 971068
+13  uc_driver                           0x0000000102249c93 uc_driver + 851091
+14  uc_driver                           0x0000000102218c79 uc_driver + 650361
+15  uc_driver                           0x000000010221949e uc_driver + 652446
+16  uc_driver                           0x0000000102618ff0 uc_driver + 4845552
+17  uc_driver                           0x000000010261df08 uc_driver + 4865800
+18  uc_driver                           0x000000010261e5d5 uc_driver + 4867541
+19  uc_driver                           0x00000001025fbc29 uc_driver + 4725801
+20  uc_driver                           0x000000010261e8c9 uc_driver + 4868297
+21  uc_driver                           0x00000001025edb44 uc_driver + 4668228
+22  uc_driver                           0x000000010263dda8 uc_driver + 4996520
+23  uc_driver                           0x000000010263dfa7 uc_driver + 4997031
+24  uc_driver                           0x000000010264d6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000104a7c278 uc_driver + 5096056
+1   uc_driver                           0x0000000104a73aaa uc_driver + 5061290
+2   uc_driver                           0x00000001045fefd0 uc_driver + 389072
+3   uc_driver                           0x00000001045e784a uc_driver + 292938
+4   uc_driver                           0x00000001045e756a uc_driver + 292202
+5   uc_driver                           0x00000001045e5888 uc_driver + 284808
+6   uc_driver                           0x00000001045e5f2f uc_driver + 286511
+7   uc_driver                           0x00000001045f4f8b uc_driver + 348043
+8   uc_driver                           0x000000010460b2bd uc_driver + 438973
+9   uc_driver                           0x000000010461058b uc_driver + 460171
+10  uc_driver                           0x00000001045e65b7 uc_driver + 288183
+11  uc_driver                           0x000000010460b11f uc_driver + 438559
+12  uc_driver                           0x000000010468d591 uc_driver + 972177
+13  uc_driver                           0x000000010466fc93 uc_driver + 851091
+14  uc_driver                           0x000000010463ec79 uc_driver + 650361
+15  uc_driver                           0x000000010463f49e uc_driver + 652446
+16  uc_driver                           0x0000000104a3eff0 uc_driver + 4845552
+17  uc_driver                           0x0000000104a43f08 uc_driver + 4865800
+18  uc_driver                           0x0000000104a445d5 uc_driver + 4867541
+19  uc_driver                           0x0000000104a21c29 uc_driver + 4725801
+20  uc_driver                           0x0000000104a448c9 uc_driver + 4868297
+21  uc_driver                           0x0000000104a13b44 uc_driver + 4668228
+22  uc_driver                           0x0000000104a63da8 uc_driver + 4996520
+23  uc_driver                           0x0000000104a63fa7 uc_driver + 4997031
+24  uc_driver                           0x0000000104a736ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000102b92278 uc_driver + 5096056
+1   uc_driver                           0x0000000102b89aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102714fd0 uc_driver + 389072
+3   uc_driver                           0x00000001026fd84a uc_driver + 292938
+4   uc_driver                           0x00000001026fd56a uc_driver + 292202
+5   uc_driver                           0x00000001026fb888 uc_driver + 284808
+6   uc_driver                           0x00000001026fbf2f uc_driver + 286511
+7   uc_driver                           0x000000010270af8b uc_driver + 348043
+8   uc_driver                           0x00000001027212bd uc_driver + 438973
+9   uc_driver                           0x000000010272658b uc_driver + 460171
+10  uc_driver                           0x00000001026fc5b7 uc_driver + 288183
+11  uc_driver                           0x000000010272111f uc_driver + 438559
+12  uc_driver                           0x00000001027a313c uc_driver + 971068
+13  uc_driver                           0x0000000102785c93 uc_driver + 851091
+14  uc_driver                           0x0000000102754c79 uc_driver + 650361
+15  uc_driver                           0x000000010275549e uc_driver + 652446
+16  uc_driver                           0x0000000102b54ff0 uc_driver + 4845552
+17  uc_driver                           0x0000000102b59f08 uc_driver + 4865800
+18  uc_driver                           0x0000000102b5a5d5 uc_driver + 4867541
+19  uc_driver                           0x0000000102b37c29 uc_driver + 4725801
+20  uc_driver                           0x0000000102b5a8c9 uc_driver + 4868297
+21  uc_driver                           0x0000000102b29b44 uc_driver + 4668228
+22  uc_driver                           0x0000000102b79da8 uc_driver + 4996520
+23  uc_driver                           0x0000000102b79fa7 uc_driver + 4997031
+24  uc_driver                           0x0000000102b896ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000104f95278 uc_driver + 5096056
+1   uc_driver                           0x0000000104f8caaa uc_driver + 5061290
+2   uc_driver                           0x0000000104b17fd0 uc_driver + 389072
+3   uc_driver                           0x0000000104b0084a uc_driver + 292938
+4   uc_driver                           0x0000000104b0056a uc_driver + 292202
+5   uc_driver                           0x0000000104afe888 uc_driver + 284808
+6   uc_driver                           0x0000000104afef2f uc_driver + 286511
+7   uc_driver                           0x0000000104b0df8b uc_driver + 348043
+8   uc_driver                           0x0000000104b242bd uc_driver + 438973
+9   uc_driver                           0x0000000104b2958b uc_driver + 460171
+10  uc_driver                           0x0000000104aff5b7 uc_driver + 288183
+11  uc_driver                           0x0000000104b2411f uc_driver + 438559
+12  uc_driver                           0x0000000104ba613c uc_driver + 971068
+13  uc_driver                           0x0000000104b88c93 uc_driver + 851091
+14  uc_driver                           0x0000000104b57c79 uc_driver + 650361
+15  uc_driver                           0x0000000104b5849e uc_driver + 652446
+16  uc_driver                           0x0000000104f57ff0 uc_driver + 4845552
+17  uc_driver                           0x0000000104f5cf08 uc_driver + 4865800
+18  uc_driver                           0x0000000104f5d5d5 uc_driver + 4867541
+19  uc_driver                           0x0000000104f3ac29 uc_driver + 4725801
+20  uc_driver                           0x0000000104f5d8c9 uc_driver + 4868297
+21  uc_driver                           0x0000000104f2cb44 uc_driver + 4668228
+22  uc_driver                           0x0000000104f7cda8 uc_driver + 4996520
+23  uc_driver                           0x0000000104f7cfa7 uc_driver + 4997031
+24  uc_driver                           0x0000000104f8c6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000102593278 uc_driver + 5096056
+1   uc_driver                           0x000000010258aaaa uc_driver + 5061290
+2   uc_driver                           0x0000000102115fd0 uc_driver + 389072
+3   uc_driver                           0x00000001020fe84a uc_driver + 292938
+4   uc_driver                           0x00000001020fe56a uc_driver + 292202
+5   uc_driver                           0x00000001020fc888 uc_driver + 284808
+6   uc_driver                           0x00000001020fcf2f uc_driver + 286511
+7   uc_driver                           0x000000010210bf8b uc_driver + 348043
+8   uc_driver                           0x00000001021222bd uc_driver + 438973
+9   uc_driver                           0x000000010212758b uc_driver + 460171
+10  uc_driver                           0x00000001020fd5b7 uc_driver + 288183
+11  uc_driver                           0x000000010212211f uc_driver + 438559
+12  uc_driver                           0x00000001021a413c uc_driver + 971068
+13  uc_driver                           0x0000000102186c93 uc_driver + 851091
+14  uc_driver                           0x0000000102155c79 uc_driver + 650361
+15  uc_driver                           0x000000010215649e uc_driver + 652446
+16  uc_driver                           0x0000000102555ff0 uc_driver + 4845552
+17  uc_driver                           0x000000010255af08 uc_driver + 4865800
+18  uc_driver                           0x000000010255b5d5 uc_driver + 4867541
+19  uc_driver                           0x0000000102538c29 uc_driver + 4725801
+20  uc_driver                           0x000000010255b8c9 uc_driver + 4868297
+21  uc_driver                           0x000000010252ab44 uc_driver + 4668228
+22  uc_driver                           0x000000010257ada8 uc_driver + 4996520
+23  uc_driver                           0x000000010257afa7 uc_driver + 4997031
+24  uc_driver                           0x000000010258a6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000105493278 uc_driver + 5096056
+1   uc_driver                           0x000000010548aaaa uc_driver + 5061290
+2   uc_driver                           0x0000000105015fd0 uc_driver + 389072
+3   uc_driver                           0x00000001050629ab uc_driver + 702891
+4   uc_driver                           0x0000000105062a81 uc_driver + 703105
+5   uc_driver                           0x00000001050a6cd4 uc_driver + 982228
+6   uc_driver                           0x0000000105086f1d uc_driver + 851741
+7   uc_driver                           0x00000001050a4250 uc_driver + 971344
+8   uc_driver                           0x0000000105086c93 uc_driver + 851091
+9   uc_driver                           0x0000000105055c79 uc_driver + 650361
+10  uc_driver                           0x000000010505649e uc_driver + 652446
+11  uc_driver                           0x0000000105455ff0 uc_driver + 4845552
+12  uc_driver                           0x000000010545af08 uc_driver + 4865800
+13  uc_driver                           0x000000010545b5d5 uc_driver + 4867541
+14  uc_driver                           0x0000000105438c29 uc_driver + 4725801
+15  uc_driver                           0x000000010545b8c9 uc_driver + 4868297
+16  uc_driver                           0x000000010542ab44 uc_driver + 4668228
+17  uc_driver                           0x000000010547ada8 uc_driver + 4996520
+18  uc_driver                           0x000000010547afa7 uc_driver + 4997031
+19  uc_driver                           0x000000010548a6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000104867278 uc_driver + 5096056
+1   uc_driver                           0x000000010485eaaa uc_driver + 5061290
+2   uc_driver                           0x00000001043e9fd0 uc_driver + 389072
+3   uc_driver                           0x00000001044369ab uc_driver + 702891
+4   uc_driver                           0x0000000104436a81 uc_driver + 703105
+5   uc_driver                           0x000000010447acd4 uc_driver + 982228
+6   uc_driver                           0x000000010445af1d uc_driver + 851741
+7   uc_driver                           0x0000000104478250 uc_driver + 971344
+8   uc_driver                           0x000000010445ac93 uc_driver + 851091
+9   uc_driver                           0x0000000104429c79 uc_driver + 650361
+10  uc_driver                           0x000000010442a49e uc_driver + 652446
+11  uc_driver                           0x0000000104829ff0 uc_driver + 4845552
+12  uc_driver                           0x000000010482ef08 uc_driver + 4865800
+13  uc_driver                           0x000000010482f5d5 uc_driver + 4867541
+14  uc_driver                           0x000000010480cc29 uc_driver + 4725801
+15  uc_driver                           0x000000010482f8c9 uc_driver + 4868297
+16  uc_driver                           0x00000001047feb44 uc_driver + 4668228
+17  uc_driver                           0x000000010484eda8 uc_driver + 4996520
+18  uc_driver                           0x000000010484efa7 uc_driver + 4997031
+19  uc_driver                           0x000000010485e6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x000000010060d278 uc_driver + 5096056
+1   uc_driver                           0x0000000100604aaa uc_driver + 5061290
+2   uc_driver                           0x000000010018ffd0 uc_driver + 389072
+3   uc_driver                           0x00000001001dc9ab uc_driver + 702891
+4   uc_driver                           0x00000001001dca81 uc_driver + 703105
+5   uc_driver                           0x0000000100220cd4 uc_driver + 982228
+6   uc_driver                           0x0000000100200f1d uc_driver + 851741
+7   uc_driver                           0x000000010021e250 uc_driver + 971344
+8   uc_driver                           0x0000000100200c93 uc_driver + 851091
+9   uc_driver                           0x00000001001cfc79 uc_driver + 650361
+10  uc_driver                           0x00000001001d049e uc_driver + 652446
+11  uc_driver                           0x00000001005cfff0 uc_driver + 4845552
+12  uc_driver                           0x00000001005d4f08 uc_driver + 4865800
+13  uc_driver                           0x00000001005d55d5 uc_driver + 4867541
+14  uc_driver                           0x00000001005b2c29 uc_driver + 4725801
+15  uc_driver                           0x00000001005d58c9 uc_driver + 4868297
+16  uc_driver                           0x00000001005a4b44 uc_driver + 4668228
+17  uc_driver                           0x00000001005f4da8 uc_driver + 4996520
+18  uc_driver                           0x00000001005f4fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001006046ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x000000010482d278 uc_driver + 5096056
+1   uc_driver                           0x0000000104824aaa uc_driver + 5061290
+2   uc_driver                           0x00000001043affd0 uc_driver + 389072
+3   uc_driver                           0x00000001043fc9ab uc_driver + 702891
+4   uc_driver                           0x00000001043fca81 uc_driver + 703105
+5   uc_driver                           0x0000000104440cd4 uc_driver + 982228
+6   uc_driver                           0x0000000104420f1d uc_driver + 851741
+7   uc_driver                           0x000000010443e250 uc_driver + 971344
+8   uc_driver                           0x0000000104420c93 uc_driver + 851091
+9   uc_driver                           0x00000001043efc79 uc_driver + 650361
+10  uc_driver                           0x00000001043f049e uc_driver + 652446
+11  uc_driver                           0x00000001047efff0 uc_driver + 4845552
+12  uc_driver                           0x00000001047f4f08 uc_driver + 4865800
+13  uc_driver                           0x00000001047f55d5 uc_driver + 4867541
+14  uc_driver                           0x00000001047d2c29 uc_driver + 4725801
+15  uc_driver                           0x00000001047f58c9 uc_driver + 4868297
+16  uc_driver                           0x00000001047c4b44 uc_driver + 4668228
+17  uc_driver                           0x0000000104814da8 uc_driver + 4996520
+18  uc_driver                           0x0000000104814fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001048246ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000103436278 uc_driver + 5096056
+1   uc_driver                           0x000000010342daaa uc_driver + 5061290
+2   uc_driver                           0x0000000102fb8fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102fa184a uc_driver + 292938
+4   uc_driver                           0x0000000102fa156a uc_driver + 292202
+5   uc_driver                           0x0000000102f9f888 uc_driver + 284808
+6   uc_driver                           0x0000000102f9ff2f uc_driver + 286511
+7   uc_driver                           0x0000000102faef8b uc_driver + 348043
+8   uc_driver                           0x0000000102fc52bd uc_driver + 438973
+9   uc_driver                           0x0000000102fca58b uc_driver + 460171
+10  uc_driver                           0x0000000102fa05b7 uc_driver + 288183
+11  uc_driver                           0x0000000102fc511f uc_driver + 438559
+12  uc_driver                           0x000000010304713c uc_driver + 971068
+13  uc_driver                           0x0000000103029c93 uc_driver + 851091
+14  uc_driver                           0x0000000102ff8c79 uc_driver + 650361
+15  uc_driver                           0x0000000102ff949e uc_driver + 652446
+16  uc_driver                           0x00000001033f8ff0 uc_driver + 4845552
+17  uc_driver                           0x00000001033fdf08 uc_driver + 4865800
+18  uc_driver                           0x00000001033fe5d5 uc_driver + 4867541
+19  uc_driver                           0x00000001033dbc29 uc_driver + 4725801
+20  uc_driver                           0x00000001033fe8c9 uc_driver + 4868297
+21  uc_driver                           0x00000001033cdb44 uc_driver + 4668228
+22  uc_driver                           0x000000010341dda8 uc_driver + 4996520
+23  uc_driver                           0x000000010341dfa7 uc_driver + 4997031
+24  uc_driver                           0x000000010342d6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000102f24278 uc_driver + 5096056
+1   uc_driver                           0x0000000102f1baaa uc_driver + 5061290
+2   uc_driver                           0x0000000102aa6fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102a8f84a uc_driver + 292938
+4   uc_driver                           0x0000000102a8f56a uc_driver + 292202
+5   uc_driver                           0x0000000102a8d888 uc_driver + 284808
+6   uc_driver                           0x0000000102a8df2f uc_driver + 286511
+7   uc_driver                           0x0000000102a9cf8b uc_driver + 348043
+8   uc_driver                           0x0000000102ab32bd uc_driver + 438973
+9   uc_driver                           0x0000000102ab858b uc_driver + 460171
+10  uc_driver                           0x0000000102a8e5b7 uc_driver + 288183
+11  uc_driver                           0x0000000102ab311f uc_driver + 438559
+12  uc_driver                           0x0000000102b3513c uc_driver + 971068
+13  uc_driver                           0x0000000102b17c93 uc_driver + 851091
+14  uc_driver                           0x0000000102ae6c79 uc_driver + 650361
+15  uc_driver                           0x0000000102ae749e uc_driver + 652446
+16  uc_driver                           0x0000000102ee6ff0 uc_driver + 4845552
+17  uc_driver                           0x0000000102eebf08 uc_driver + 4865800
+18  uc_driver                           0x0000000102eec5d5 uc_driver + 4867541
+19  uc_driver                           0x0000000102ec9c29 uc_driver + 4725801
+20  uc_driver                           0x0000000102eec8c9 uc_driver + 4868297
+21  uc_driver                           0x0000000102ebbb44 uc_driver + 4668228
+22  uc_driver                           0x0000000102f0bda8 uc_driver + 4996520
+23  uc_driver                           0x0000000102f0bfa7 uc_driver + 4997031
+24  uc_driver                           0x0000000102f1b6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000102e1b278 uc_driver + 5096056
+1   uc_driver                           0x0000000102e12aaa uc_driver + 5061290
+2   uc_driver                           0x000000010299dfd0 uc_driver + 389072
+3   uc_driver                           0x000000010298684a uc_driver + 292938
+4   uc_driver                           0x000000010298656a uc_driver + 292202
+5   uc_driver                           0x0000000102984888 uc_driver + 284808
+6   uc_driver                           0x0000000102984f2f uc_driver + 286511
+7   uc_driver                           0x0000000102993f8b uc_driver + 348043
+8   uc_driver                           0x00000001029aa2bd uc_driver + 438973
+9   uc_driver                           0x00000001029af58b uc_driver + 460171
+10  uc_driver                           0x00000001029855b7 uc_driver + 288183
+11  uc_driver                           0x00000001029aa11f uc_driver + 438559
+12  uc_driver                           0x0000000102a2c13c uc_driver + 971068
+13  uc_driver                           0x0000000102a0ec93 uc_driver + 851091
+14  uc_driver                           0x00000001029ddc79 uc_driver + 650361
+15  uc_driver                           0x00000001029de49e uc_driver + 652446
+16  uc_driver                           0x0000000102dddff0 uc_driver + 4845552
+17  uc_driver                           0x0000000102de2f08 uc_driver + 4865800
+18  uc_driver                           0x0000000102de35d5 uc_driver + 4867541
+19  uc_driver                           0x0000000102dc0c29 uc_driver + 4725801
+20  uc_driver                           0x0000000102de38c9 uc_driver + 4868297
+21  uc_driver                           0x0000000102db2b44 uc_driver + 4668228
+22  uc_driver                           0x0000000102e02da8 uc_driver + 4996520
+23  uc_driver                           0x0000000102e02fa7 uc_driver + 4997031
+24  uc_driver                           0x0000000102e126ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102c12278 uc_driver + 5096056
+1   uc_driver                           0x0000000102c09aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102794fd0 uc_driver + 389072
+3   uc_driver                           0x00000001027e19ab uc_driver + 702891
+4   uc_driver                           0x00000001027e1a81 uc_driver + 703105
+5   uc_driver                           0x0000000102825cd4 uc_driver + 982228
+6   uc_driver                           0x0000000102805f1d uc_driver + 851741
+7   uc_driver                           0x0000000102823250 uc_driver + 971344
+8   uc_driver                           0x0000000102805c93 uc_driver + 851091
+9   uc_driver                           0x00000001027d4c79 uc_driver + 650361
+10  uc_driver                           0x00000001027d549e uc_driver + 652446
+11  uc_driver                           0x0000000102bd4ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000102bd9f08 uc_driver + 4865800
+13  uc_driver                           0x0000000102bda5d5 uc_driver + 4867541
+14  uc_driver                           0x0000000102bb7c29 uc_driver + 4725801
+15  uc_driver                           0x0000000102bda8c9 uc_driver + 4868297
+16  uc_driver                           0x0000000102ba9b44 uc_driver + 4668228
+17  uc_driver                           0x0000000102bf9da8 uc_driver + 4996520
+18  uc_driver                           0x0000000102bf9fa7 uc_driver + 4997031
+19  uc_driver                           0x0000000102c096ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 2/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001024e5278 uc_driver + 5096056
+1   uc_driver                           0x00000001024dcaaa uc_driver + 5061290
+2   uc_driver                           0x0000000102067fd0 uc_driver + 389072
+3   uc_driver                           0x00000001020b49ab uc_driver + 702891
+4   uc_driver                           0x00000001020b4a81 uc_driver + 703105
+5   uc_driver                           0x00000001020f8cd4 uc_driver + 982228
+6   uc_driver                           0x00000001020d8f1d uc_driver + 851741
+7   uc_driver                           0x00000001020f6250 uc_driver + 971344
+8   uc_driver                           0x00000001020d8c93 uc_driver + 851091
+9   uc_driver                           0x00000001020a7c79 uc_driver + 650361
+10  uc_driver                           0x00000001020a849e uc_driver + 652446
+11  uc_driver                           0x00000001024a7ff0 uc_driver + 4845552
+12  uc_driver                           0x00000001024acf08 uc_driver + 4865800
+13  uc_driver                           0x00000001024ad5d5 uc_driver + 4867541
+14  uc_driver                           0x000000010248ac29 uc_driver + 4725801
+15  uc_driver                           0x00000001024ad8c9 uc_driver + 4868297
+16  uc_driver                           0x000000010247cb44 uc_driver + 4668228
+17  uc_driver                           0x00000001024ccda8 uc_driver + 4996520
+18  uc_driver                           0x00000001024ccfa7 uc_driver + 4997031
+19  uc_driver                           0x00000001024dc6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001012f2278 uc_driver + 5096056
+1   uc_driver                           0x00000001012e9aaa uc_driver + 5061290
+2   uc_driver                           0x0000000100e74fd0 uc_driver + 389072
+3   uc_driver                           0x0000000100e5c809 uc_driver + 288777
+4   uc_driver                           0x0000000100e80e81 uc_driver + 437889
+5   uc_driver                           0x0000000100f0313c uc_driver + 971068
+6   uc_driver                           0x0000000100ee5c93 uc_driver + 851091
+7   uc_driver                           0x0000000100eb4c79 uc_driver + 650361
+8   uc_driver                           0x0000000100eb549e uc_driver + 652446
+9   uc_driver                           0x00000001012b4ff0 uc_driver + 4845552
+10  uc_driver                           0x00000001012b9f08 uc_driver + 4865800
+11  uc_driver                           0x00000001012ba5d5 uc_driver + 4867541
+12  uc_driver                           0x0000000101297c29 uc_driver + 4725801
+13  uc_driver                           0x00000001012ba8c9 uc_driver + 4868297
+14  uc_driver                           0x0000000101289b44 uc_driver + 4668228
+15  uc_driver                           0x00000001012d9da8 uc_driver + 4996520
+16  uc_driver                           0x00000001012d9fa7 uc_driver + 4997031
+17  uc_driver                           0x00000001012e96ae uc_driver + 5060270
+18  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001008ad278 uc_driver + 5096056
+1   uc_driver                           0x00000001008a4aaa uc_driver + 5061290
+2   uc_driver                           0x000000010042ffd0 uc_driver + 389072
+3   uc_driver                           0x0000000100417809 uc_driver + 288777
+4   uc_driver                           0x000000010043be81 uc_driver + 437889
+5   uc_driver                           0x00000001004be13c uc_driver + 971068
+6   uc_driver                           0x00000001004a0c93 uc_driver + 851091
+7   uc_driver                           0x000000010046fc79 uc_driver + 650361
+8   uc_driver                           0x000000010047049e uc_driver + 652446
+9   uc_driver                           0x000000010086fff0 uc_driver + 4845552
+10  uc_driver                           0x0000000100874f08 uc_driver + 4865800
+11  uc_driver                           0x00000001008755d5 uc_driver + 4867541
+12  uc_driver                           0x0000000100852c29 uc_driver + 4725801
+13  uc_driver                           0x00000001008758c9 uc_driver + 4868297
+14  uc_driver                           0x0000000100844b44 uc_driver + 4668228
+15  uc_driver                           0x0000000100894da8 uc_driver + 4996520
+16  uc_driver                           0x0000000100894fa7 uc_driver + 4997031
+17  uc_driver                           0x00000001008a46ae uc_driver + 5060270
+18  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x0000000103326278 uc_driver + 5096056
+1   uc_driver                           0x000000010331daaa uc_driver + 5061290
+2   uc_driver                           0x0000000102ea8fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102e9184a uc_driver + 292938
+4   uc_driver                           0x0000000102e9156a uc_driver + 292202
+5   uc_driver                           0x0000000102e8f888 uc_driver + 284808
+6   uc_driver                           0x0000000102e8ff2f uc_driver + 286511
+7   uc_driver                           0x0000000102e9ef8b uc_driver + 348043
+8   uc_driver                           0x0000000102eb52bd uc_driver + 438973
+9   uc_driver                           0x0000000102eba58b uc_driver + 460171
+10  uc_driver                           0x0000000102e905b7 uc_driver + 288183
+11  uc_driver                           0x0000000102eb511f uc_driver + 438559
+12  uc_driver                           0x0000000102f3713c uc_driver + 971068
+13  uc_driver                           0x0000000102f19c93 uc_driver + 851091
+14  uc_driver                           0x0000000102ee8c79 uc_driver + 650361
+15  uc_driver                           0x0000000102ee949e uc_driver + 652446
+16  uc_driver                           0x00000001032e8ff0 uc_driver + 4845552
+17  uc_driver                           0x00000001032edf08 uc_driver + 4865800
+18  uc_driver                           0x00000001032ee5d5 uc_driver + 4867541
+19  uc_driver                           0x00000001032cbc29 uc_driver + 4725801
+20  uc_driver                           0x00000001032ee8c9 uc_driver + 4868297
+21  uc_driver                           0x00000001032bdb44 uc_driver + 4668228
+22  uc_driver                           0x000000010330dda8 uc_driver + 4996520
+23  uc_driver                           0x000000010330dfa7 uc_driver + 4997031
+24  uc_driver                           0x000000010331d6ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 1/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001031fc278 uc_driver + 5096056
+1   uc_driver                           0x00000001031f3aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102d7efd0 uc_driver + 389072
+3   uc_driver                           0x0000000102d6784a uc_driver + 292938
+4   uc_driver                           0x0000000102d6756a uc_driver + 292202
+5   uc_driver                           0x0000000102d65888 uc_driver + 284808
+6   uc_driver                           0x0000000102d65f2f uc_driver + 286511
+7   uc_driver                           0x0000000102d74f8b uc_driver + 348043
+8   uc_driver                           0x0000000102d8b2bd uc_driver + 438973
+9   uc_driver                           0x0000000102d9058b uc_driver + 460171
+10  uc_driver                           0x0000000102d665b7 uc_driver + 288183
+11  uc_driver                           0x0000000102d8b11f uc_driver + 438559
+12  uc_driver                           0x0000000102e0d13c uc_driver + 971068
+13  uc_driver                           0x0000000102defc93 uc_driver + 851091
+14  uc_driver                           0x0000000102dbec79 uc_driver + 650361
+15  uc_driver                           0x0000000102dbf49e uc_driver + 652446
+16  uc_driver                           0x00000001031beff0 uc_driver + 4845552
+17  uc_driver                           0x00000001031c3f08 uc_driver + 4865800
+18  uc_driver                           0x00000001031c45d5 uc_driver + 4867541
+19  uc_driver                           0x00000001031a1c29 uc_driver + 4725801
+20  uc_driver                           0x00000001031c48c9 uc_driver + 4868297
+21  uc_driver                           0x0000000103193b44 uc_driver + 4668228
+22  uc_driver                           0x00000001031e3da8 uc_driver + 4996520
+23  uc_driver                           0x00000001031e3fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001031f36ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 2/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001008ad278 uc_driver + 5096056
+1   uc_driver                           0x00000001008a4aaa uc_driver + 5061290
+2   uc_driver                           0x000000010042ffd0 uc_driver + 389072
+3   uc_driver                           0x000000010041884a uc_driver + 292938
+4   uc_driver                           0x000000010041856a uc_driver + 292202
+5   uc_driver                           0x0000000100416888 uc_driver + 284808
+6   uc_driver                           0x0000000100416f2f uc_driver + 286511
+7   uc_driver                           0x0000000100425f8b uc_driver + 348043
+8   uc_driver                           0x000000010043c2bd uc_driver + 438973
+9   uc_driver                           0x000000010044158b uc_driver + 460171
+10  uc_driver                           0x00000001004175b7 uc_driver + 288183
+11  uc_driver                           0x000000010043c11f uc_driver + 438559
+12  uc_driver                           0x00000001004be13c uc_driver + 971068
+13  uc_driver                           0x00000001004a0c93 uc_driver + 851091
+14  uc_driver                           0x000000010046fc79 uc_driver + 650361
+15  uc_driver                           0x000000010047049e uc_driver + 652446
+16  uc_driver                           0x000000010086fff0 uc_driver + 4845552
+17  uc_driver                           0x0000000100874f08 uc_driver + 4865800
+18  uc_driver                           0x00000001008755d5 uc_driver + 4867541
+19  uc_driver                           0x0000000100852c29 uc_driver + 4725801
+20  uc_driver                           0x00000001008758c9 uc_driver + 4868297
+21  uc_driver                           0x0000000100844b44 uc_driver + 4668228
+22  uc_driver                           0x0000000100894da8 uc_driver + 4996520
+23  uc_driver                           0x0000000100894fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001008a46ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at scroll_to_end_of_the_page, attempt 3/3: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=128.0.6613.36)
+Stacktrace:
+0   uc_driver                           0x00000001008ad278 uc_driver + 5096056
+1   uc_driver                           0x00000001008a4aaa uc_driver + 5061290
+2   uc_driver                           0x000000010042ffd0 uc_driver + 389072
+3   uc_driver                           0x000000010041884a uc_driver + 292938
+4   uc_driver                           0x000000010041856a uc_driver + 292202
+5   uc_driver                           0x0000000100416888 uc_driver + 284808
+6   uc_driver                           0x0000000100416f2f uc_driver + 286511
+7   uc_driver                           0x0000000100425f8b uc_driver + 348043
+8   uc_driver                           0x000000010043c2bd uc_driver + 438973
+9   uc_driver                           0x000000010044158b uc_driver + 460171
+10  uc_driver                           0x00000001004175b7 uc_driver + 288183
+11  uc_driver                           0x000000010043c11f uc_driver + 438559
+12  uc_driver                           0x00000001004be13c uc_driver + 971068
+13  uc_driver                           0x00000001004a0c93 uc_driver + 851091
+14  uc_driver                           0x000000010046fc79 uc_driver + 650361
+15  uc_driver                           0x000000010047049e uc_driver + 652446
+16  uc_driver                           0x000000010086fff0 uc_driver + 4845552
+17  uc_driver                           0x0000000100874f08 uc_driver + 4865800
+18  uc_driver                           0x00000001008755d5 uc_driver + 4867541
+19  uc_driver                           0x0000000100852c29 uc_driver + 4725801
+20  uc_driver                           0x00000001008758c9 uc_driver + 4868297
+21  uc_driver                           0x0000000100844b44 uc_driver + 4668228
+22  uc_driver                           0x0000000100894da8 uc_driver + 4996520
+23  uc_driver                           0x0000000100894fa7 uc_driver + 4997031
+24  uc_driver                           0x00000001008a46ae uc_driver + 5060270
+25  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+26  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 2/5: No active exception to reraise
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000104d13278 uc_driver + 5096056
+1   uc_driver                           0x0000000104d0aaaa uc_driver + 5061290
+2   uc_driver                           0x0000000104895fd0 uc_driver + 389072
+3   uc_driver                           0x00000001048e29ab uc_driver + 702891
+4   uc_driver                           0x00000001048e2a81 uc_driver + 703105
+5   uc_driver                           0x0000000104926cd4 uc_driver + 982228
+6   uc_driver                           0x0000000104906f1d uc_driver + 851741
+7   uc_driver                           0x0000000104924250 uc_driver + 971344
+8   uc_driver                           0x0000000104906c93 uc_driver + 851091
+9   uc_driver                           0x00000001048d5c79 uc_driver + 650361
+10  uc_driver                           0x00000001048d649e uc_driver + 652446
+11  uc_driver                           0x0000000104cd5ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000104cdaf08 uc_driver + 4865800
+13  uc_driver                           0x0000000104cdb5d5 uc_driver + 4867541
+14  uc_driver                           0x0000000104cb8c29 uc_driver + 4725801
+15  uc_driver                           0x0000000104cdb8c9 uc_driver + 4868297
+16  uc_driver                           0x0000000104caab44 uc_driver + 4668228
+17  uc_driver                           0x0000000104cfada8 uc_driver + 4996520
+18  uc_driver                           0x0000000104cfafa7 uc_driver + 4997031
+19  uc_driver                           0x0000000104d0a6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000105393278 uc_driver + 5096056
+1   uc_driver                           0x000000010538aaaa uc_driver + 5061290
+2   uc_driver                           0x0000000104f15fd0 uc_driver + 389072
+3   uc_driver                           0x0000000104f629ab uc_driver + 702891
+4   uc_driver                           0x0000000104f62a81 uc_driver + 703105
+5   uc_driver                           0x0000000104fa6cd4 uc_driver + 982228
+6   uc_driver                           0x0000000104f86f1d uc_driver + 851741
+7   uc_driver                           0x0000000104fa4250 uc_driver + 971344
+8   uc_driver                           0x0000000104f86c93 uc_driver + 851091
+9   uc_driver                           0x0000000104f55c79 uc_driver + 650361
+10  uc_driver                           0x0000000104f5649e uc_driver + 652446
+11  uc_driver                           0x0000000105355ff0 uc_driver + 4845552
+12  uc_driver                           0x000000010535af08 uc_driver + 4865800
+13  uc_driver                           0x000000010535b5d5 uc_driver + 4867541
+14  uc_driver                           0x0000000105338c29 uc_driver + 4725801
+15  uc_driver                           0x000000010535b8c9 uc_driver + 4868297
+16  uc_driver                           0x000000010532ab44 uc_driver + 4668228
+17  uc_driver                           0x000000010537ada8 uc_driver + 4996520
+18  uc_driver                           0x000000010537afa7 uc_driver + 4997031
+19  uc_driver                           0x000000010538a6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x000000010462e278 uc_driver + 5096056
+1   uc_driver                           0x0000000104625aaa uc_driver + 5061290
+2   uc_driver                           0x00000001041b0fd0 uc_driver + 389072
+3   uc_driver                           0x00000001041fd9ab uc_driver + 702891
+4   uc_driver                           0x00000001041fda81 uc_driver + 703105
+5   uc_driver                           0x0000000104241cd4 uc_driver + 982228
+6   uc_driver                           0x0000000104221f1d uc_driver + 851741
+7   uc_driver                           0x000000010423f250 uc_driver + 971344
+8   uc_driver                           0x0000000104221c93 uc_driver + 851091
+9   uc_driver                           0x00000001041f0c79 uc_driver + 650361
+10  uc_driver                           0x00000001041f149e uc_driver + 652446
+11  uc_driver                           0x00000001045f0ff0 uc_driver + 4845552
+12  uc_driver                           0x00000001045f5f08 uc_driver + 4865800
+13  uc_driver                           0x00000001045f65d5 uc_driver + 4867541
+14  uc_driver                           0x00000001045d3c29 uc_driver + 4725801
+15  uc_driver                           0x00000001045f68c9 uc_driver + 4868297
+16  uc_driver                           0x00000001045c5b44 uc_driver + 4668228
+17  uc_driver                           0x0000000104615da8 uc_driver + 4996520
+18  uc_driver                           0x0000000104615fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001046256ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000104926278 uc_driver + 5096056
+1   uc_driver                           0x000000010491daaa uc_driver + 5061290
+2   uc_driver                           0x00000001044a8fd0 uc_driver + 389072
+3   uc_driver                           0x00000001044f59ab uc_driver + 702891
+4   uc_driver                           0x00000001044f5a81 uc_driver + 703105
+5   uc_driver                           0x0000000104539cd4 uc_driver + 982228
+6   uc_driver                           0x0000000104519f1d uc_driver + 851741
+7   uc_driver                           0x0000000104537250 uc_driver + 971344
+8   uc_driver                           0x0000000104519c93 uc_driver + 851091
+9   uc_driver                           0x00000001044e8c79 uc_driver + 650361
+10  uc_driver                           0x00000001044e949e uc_driver + 652446
+11  uc_driver                           0x00000001048e8ff0 uc_driver + 4845552
+12  uc_driver                           0x00000001048edf08 uc_driver + 4865800
+13  uc_driver                           0x00000001048ee5d5 uc_driver + 4867541
+14  uc_driver                           0x00000001048cbc29 uc_driver + 4725801
+15  uc_driver                           0x00000001048ee8c9 uc_driver + 4868297
+16  uc_driver                           0x00000001048bdb44 uc_driver + 4668228
+17  uc_driver                           0x000000010490dda8 uc_driver + 4996520
+18  uc_driver                           0x000000010490dfa7 uc_driver + 4997031
+19  uc_driver                           0x000000010491d6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102c7e278 uc_driver + 5096056
+1   uc_driver                           0x0000000102c75aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102800fd0 uc_driver + 389072
+3   uc_driver                           0x000000010284d9ab uc_driver + 702891
+4   uc_driver                           0x000000010284da81 uc_driver + 703105
+5   uc_driver                           0x0000000102891cd4 uc_driver + 982228
+6   uc_driver                           0x0000000102871f1d uc_driver + 851741
+7   uc_driver                           0x000000010288f250 uc_driver + 971344
+8   uc_driver                           0x0000000102871c93 uc_driver + 851091
+9   uc_driver                           0x0000000102840c79 uc_driver + 650361
+10  uc_driver                           0x000000010284149e uc_driver + 652446
+11  uc_driver                           0x0000000102c40ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000102c45f08 uc_driver + 4865800
+13  uc_driver                           0x0000000102c465d5 uc_driver + 4867541
+14  uc_driver                           0x0000000102c23c29 uc_driver + 4725801
+15  uc_driver                           0x0000000102c468c9 uc_driver + 4868297
+16  uc_driver                           0x0000000102c15b44 uc_driver + 4668228
+17  uc_driver                           0x0000000102c65da8 uc_driver + 4996520
+18  uc_driver                           0x0000000102c65fa7 uc_driver + 4997031
+19  uc_driver                           0x0000000102c756ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x000000010149c278 uc_driver + 5096056
+1   uc_driver                           0x0000000101493aaa uc_driver + 5061290
+2   uc_driver                           0x000000010101efd0 uc_driver + 389072
+3   uc_driver                           0x000000010106b9ab uc_driver + 702891
+4   uc_driver                           0x000000010106ba81 uc_driver + 703105
+5   uc_driver                           0x00000001010afcd4 uc_driver + 982228
+6   uc_driver                           0x000000010108ff1d uc_driver + 851741
+7   uc_driver                           0x00000001010ad250 uc_driver + 971344
+8   uc_driver                           0x000000010108fc93 uc_driver + 851091
+9   uc_driver                           0x000000010105ec79 uc_driver + 650361
+10  uc_driver                           0x000000010105f49e uc_driver + 652446
+11  uc_driver                           0x000000010145eff0 uc_driver + 4845552
+12  uc_driver                           0x0000000101463f08 uc_driver + 4865800
+13  uc_driver                           0x00000001014645d5 uc_driver + 4867541
+14  uc_driver                           0x0000000101441c29 uc_driver + 4725801
+15  uc_driver                           0x00000001014648c9 uc_driver + 4868297
+16  uc_driver                           0x0000000101433b44 uc_driver + 4668228
+17  uc_driver                           0x0000000101483da8 uc_driver + 4996520
+18  uc_driver                           0x0000000101483fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001014936ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: invalid session id
+Stacktrace:
+0   uc_driver                           0x0000000105095278 uc_driver + 5096056
+1   uc_driver                           0x000000010508caaa uc_driver + 5061290
+2   uc_driver                           0x0000000104c17e01 uc_driver + 388609
+3   uc_driver                           0x0000000104c56f45 uc_driver + 646981
+4   uc_driver                           0x0000000104c88dd4 uc_driver + 851412
+5   uc_driver                           0x0000000104c8361b uc_driver + 828955
+6   uc_driver                           0x0000000104c82fe7 uc_driver + 827367
+7   uc_driver                           0x0000000104be584f uc_driver + 182351
+8   uc_driver                           0x0000000105057ff0 uc_driver + 4845552
+9   uc_driver                           0x000000010505cf08 uc_driver + 4865800
+10  uc_driver                           0x000000010505d5d5 uc_driver + 4867541
+11  uc_driver                           0x000000010503ac29 uc_driver + 4725801
+12  uc_driver                           0x000000010505d8c9 uc_driver + 4868297
+13  uc_driver                           0x000000010502cb44 uc_driver + 4668228
+14  uc_driver                           0x0000000104be421a uc_driver + 176666
+15  dyld                                0x000000020602b366 start + 1942
+
+Error at scroll_to_end_of_the_page, attempt 1/3: HTTPConnectionPool(host='localhost', port=63555): Max retries exceeded with url: /session/efb51605ff1b121aa6958e538d300ce8/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1049d6e40>: Failed to establish a new connection: [Errno 61] Connection refused'))
+Error at scroll_to_end_of_the_page, attempt 2/3: HTTPConnectionPool(host='localhost', port=63555): Max retries exceeded with url: /session/efb51605ff1b121aa6958e538d300ce8/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10c015400>: Failed to establish a new connection: [Errno 61] Connection refused'))
+Error at scroll_to_end_of_the_page, attempt 3/3: HTTPConnectionPool(host='localhost', port=63555): Max retries exceeded with url: /session/efb51605ff1b121aa6958e538d300ce8/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10c015d60>: Failed to establish a new connection: [Errno 61] Connection refused'))
+Error at process_comic_chapters, attempt 1/5: No active exception to reraise
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x000000010327a278 uc_driver + 5096056
+1   uc_driver                           0x0000000103271aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102dfcfd0 uc_driver + 389072
+3   uc_driver                           0x0000000102e499ab uc_driver + 702891
+4   uc_driver                           0x0000000102e49a81 uc_driver + 703105
+5   uc_driver                           0x0000000102e8dcd4 uc_driver + 982228
+6   uc_driver                           0x0000000102e6df1d uc_driver + 851741
+7   uc_driver                           0x0000000102e8b250 uc_driver + 971344
+8   uc_driver                           0x0000000102e6dc93 uc_driver + 851091
+9   uc_driver                           0x0000000102e3cc79 uc_driver + 650361
+10  uc_driver                           0x0000000102e3d49e uc_driver + 652446
+11  uc_driver                           0x000000010323cff0 uc_driver + 4845552
+12  uc_driver                           0x0000000103241f08 uc_driver + 4865800
+13  uc_driver                           0x00000001032425d5 uc_driver + 4867541
+14  uc_driver                           0x000000010321fc29 uc_driver + 4725801
+15  uc_driver                           0x00000001032428c9 uc_driver + 4868297
+16  uc_driver                           0x0000000103211b44 uc_driver + 4668228
+17  uc_driver                           0x0000000103261da8 uc_driver + 4996520
+18  uc_driver                           0x0000000103261fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001032716ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000103402278 uc_driver + 5096056
+1   uc_driver                           0x00000001033f9aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102f84fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102fd19ab uc_driver + 702891
+4   uc_driver                           0x0000000102fd1a81 uc_driver + 703105
+5   uc_driver                           0x0000000103015cd4 uc_driver + 982228
+6   uc_driver                           0x0000000102ff5f1d uc_driver + 851741
+7   uc_driver                           0x0000000103013250 uc_driver + 971344
+8   uc_driver                           0x0000000102ff5c93 uc_driver + 851091
+9   uc_driver                           0x0000000102fc4c79 uc_driver + 650361
+10  uc_driver                           0x0000000102fc549e uc_driver + 652446
+11  uc_driver                           0x00000001033c4ff0 uc_driver + 4845552
+12  uc_driver                           0x00000001033c9f08 uc_driver + 4865800
+13  uc_driver                           0x00000001033ca5d5 uc_driver + 4867541
+14  uc_driver                           0x00000001033a7c29 uc_driver + 4725801
+15  uc_driver                           0x00000001033ca8c9 uc_driver + 4868297
+16  uc_driver                           0x0000000103399b44 uc_driver + 4668228
+17  uc_driver                           0x00000001033e9da8 uc_driver + 4996520
+18  uc_driver                           0x00000001033e9fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001033f96ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000102845278 uc_driver + 5096056
+1   uc_driver                           0x000000010283caaa uc_driver + 5061290
+2   uc_driver                           0x00000001023c7fd0 uc_driver + 389072
+3   uc_driver                           0x00000001024149ab uc_driver + 702891
+4   uc_driver                           0x0000000102414a81 uc_driver + 703105
+5   uc_driver                           0x0000000102458cd4 uc_driver + 982228
+6   uc_driver                           0x0000000102438f1d uc_driver + 851741
+7   uc_driver                           0x0000000102456250 uc_driver + 971344
+8   uc_driver                           0x0000000102438c93 uc_driver + 851091
+9   uc_driver                           0x0000000102407c79 uc_driver + 650361
+10  uc_driver                           0x000000010240849e uc_driver + 652446
+11  uc_driver                           0x0000000102807ff0 uc_driver + 4845552
+12  uc_driver                           0x000000010280cf08 uc_driver + 4865800
+13  uc_driver                           0x000000010280d5d5 uc_driver + 4867541
+14  uc_driver                           0x00000001027eac29 uc_driver + 4725801
+15  uc_driver                           0x000000010280d8c9 uc_driver + 4868297
+16  uc_driver                           0x00000001027dcb44 uc_driver + 4668228
+17  uc_driver                           0x000000010282cda8 uc_driver + 4996520
+18  uc_driver                           0x000000010282cfa7 uc_driver + 4997031
+19  uc_driver                           0x000000010283c6ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001032bf278 uc_driver + 5096056
+1   uc_driver                           0x00000001032b6aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102e41fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102e8e9ab uc_driver + 702891
+4   uc_driver                           0x0000000102e8ea81 uc_driver + 703105
+5   uc_driver                           0x0000000102ed2cd4 uc_driver + 982228
+6   uc_driver                           0x0000000102eb2f1d uc_driver + 851741
+7   uc_driver                           0x0000000102ed0250 uc_driver + 971344
+8   uc_driver                           0x0000000102eb2c93 uc_driver + 851091
+9   uc_driver                           0x0000000102e81c79 uc_driver + 650361
+10  uc_driver                           0x0000000102e8249e uc_driver + 652446
+11  uc_driver                           0x0000000103281ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000103286f08 uc_driver + 4865800
+13  uc_driver                           0x00000001032875d5 uc_driver + 4867541
+14  uc_driver                           0x0000000103264c29 uc_driver + 4725801
+15  uc_driver                           0x00000001032878c9 uc_driver + 4868297
+16  uc_driver                           0x0000000103256b44 uc_driver + 4668228
+17  uc_driver                           0x00000001032a6da8 uc_driver + 4996520
+18  uc_driver                           0x00000001032a6fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001032b66ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x0000000105401278 uc_driver + 5096056
+1   uc_driver                           0x00000001053f8aaa uc_driver + 5061290
+2   uc_driver                           0x0000000104f83fd0 uc_driver + 389072
+3   uc_driver                           0x0000000104fd09ab uc_driver + 702891
+4   uc_driver                           0x0000000104fd0a81 uc_driver + 703105
+5   uc_driver                           0x0000000105014cd4 uc_driver + 982228
+6   uc_driver                           0x0000000104ff4f1d uc_driver + 851741
+7   uc_driver                           0x0000000105012250 uc_driver + 971344
+8   uc_driver                           0x0000000104ff4c93 uc_driver + 851091
+9   uc_driver                           0x0000000104fc3c79 uc_driver + 650361
+10  uc_driver                           0x0000000104fc449e uc_driver + 652446
+11  uc_driver                           0x00000001053c3ff0 uc_driver + 4845552
+12  uc_driver                           0x00000001053c8f08 uc_driver + 4865800
+13  uc_driver                           0x00000001053c95d5 uc_driver + 4867541
+14  uc_driver                           0x00000001053a6c29 uc_driver + 4725801
+15  uc_driver                           0x00000001053c98c9 uc_driver + 4868297
+16  uc_driver                           0x0000000105398b44 uc_driver + 4668228
+17  uc_driver                           0x00000001053e8da8 uc_driver + 4996520
+18  uc_driver                           0x00000001053e8fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001053f86ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
+Error at process_comic_chapters, attempt 1/5: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(@id, 'chapter-heading')]"}
+  (Session info: chrome=128.0.6613.36); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   uc_driver                           0x00000001031a1278 uc_driver + 5096056
+1   uc_driver                           0x0000000103198aaa uc_driver + 5061290
+2   uc_driver                           0x0000000102d23fd0 uc_driver + 389072
+3   uc_driver                           0x0000000102d709ab uc_driver + 702891
+4   uc_driver                           0x0000000102d70a81 uc_driver + 703105
+5   uc_driver                           0x0000000102db4cd4 uc_driver + 982228
+6   uc_driver                           0x0000000102d94f1d uc_driver + 851741
+7   uc_driver                           0x0000000102db2250 uc_driver + 971344
+8   uc_driver                           0x0000000102d94c93 uc_driver + 851091
+9   uc_driver                           0x0000000102d63c79 uc_driver + 650361
+10  uc_driver                           0x0000000102d6449e uc_driver + 652446
+11  uc_driver                           0x0000000103163ff0 uc_driver + 4845552
+12  uc_driver                           0x0000000103168f08 uc_driver + 4865800
+13  uc_driver                           0x00000001031695d5 uc_driver + 4867541
+14  uc_driver                           0x0000000103146c29 uc_driver + 4725801
+15  uc_driver                           0x00000001031698c9 uc_driver + 4868297
+16  uc_driver                           0x0000000103138b44 uc_driver + 4668228
+17  uc_driver                           0x0000000103188da8 uc_driver + 4996520
+18  uc_driver                           0x0000000103188fa7 uc_driver + 4997031
+19  uc_driver                           0x00000001031986ae uc_driver + 5060270
+20  libsystem_pthread.dylib             0x00007ff811d3c18b _pthread_start + 99
+21  libsystem_pthread.dylib             0x00007ff811d37ae3 thread_start + 15
+
