@@ -1,0 +1,59 @@
+2024-08-25 17:45:45,053 - ERROR - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.84)
+Stacktrace:
+0   uc_driver                           0x000000010273b278 uc_driver + 5096056
+1   uc_driver                           0x0000000102732aaa uc_driver + 5061290
+2   uc_driver                           0x00000001022bdfd0 uc_driver + 389072
+3   uc_driver                           0x00000001022953ef uc_driver + 222191
+4   uc_driver                           0x0000000102336fcd uc_driver + 884685
+5   uc_driver                           0x000000010233d810 uc_driver + 911376
+6   uc_driver                           0x000000010232eeb8 uc_driver + 851640
+7   uc_driver                           0x00000001022fdc79 uc_driver + 650361
+8   uc_driver                           0x00000001022fe49e uc_driver + 652446
+9   uc_driver                           0x00000001026fdff0 uc_driver + 4845552
+10  uc_driver                           0x0000000102702f08 uc_driver + 4865800
+11  uc_driver                           0x00000001027035d5 uc_driver + 4867541
+12  uc_driver                           0x00000001026e0c29 uc_driver + 4725801
+13  uc_driver                           0x00000001027038c9 uc_driver + 4868297
+14  uc_driver                           0x00000001026d2b44 uc_driver + 4668228
+15  uc_driver                           0x0000000102722da8 uc_driver + 4996520
+16  uc_driver                           0x0000000102722fa7 uc_driver + 4997031
+17  uc_driver                           0x00000001027326ae uc_driver + 5060270
+18  libsystem_pthread.dylib             0x00007ff8098b418b _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff8098afae3 thread_start + 15
+
+2024-08-25 17:46:02,347 - ERROR - An error occurred: Expecting value: line 1 column 1 (char 0)
+2024-08-25 17:46:03,031 - ERROR - An error occurred: Expecting value: line 1 column 1 (char 0)
+2024-08-25 17:46:20,294 - ERROR - An error occurred: Expecting value: line 1 column 1 (char 0)
+2024-08-25 17:46:21,021 - ERROR - An error occurred: Expecting value: line 1 column 1 (char 0)
+2024-08-25 17:46:38,210 - ERROR - An error occurred: Expecting value: line 1 column 1 (char 0)
+2024-08-25 17:46:38,941 - ERROR - An error occurred: Expecting value: line 1 column 1 (char 0)
+2024-08-25 17:47:17,056 - ERROR - An error occurred: Message: no such window: No target with given id found
+  (Session info: chrome=128.0.6613.84)
+Stacktrace:
+0   uc_driver                           0x00000001004e9278 uc_driver + 5096056
+1   uc_driver                           0x00000001004e0aaa uc_driver + 5061290
+2   uc_driver                           0x000000010006bfd0 uc_driver + 389072
+3   uc_driver                           0x0000000100053cce uc_driver + 289998
+4   uc_driver                           0x000000010005272f uc_driver + 284463
+5   uc_driver                           0x0000000100052dba uc_driver + 286138
+6   uc_driver                           0x0000000100051981 uc_driver + 280961
+7   uc_driver                           0x0000000100046d95 uc_driver + 236949
+8   uc_driver                           0x000000010004716c uc_driver + 237932
+9   uc_driver                           0x00000001000ebbdf uc_driver + 912351
+10  uc_driver                           0x00000001000dceb8 uc_driver + 851640
+11  uc_driver                           0x00000001000abc79 uc_driver + 650361
+12  uc_driver                           0x00000001000ac49e uc_driver + 652446
+13  uc_driver                           0x00000001004abff0 uc_driver + 4845552
+14  uc_driver                           0x00000001004b0f08 uc_driver + 4865800
+15  uc_driver                           0x00000001004b15d5 uc_driver + 4867541
+16  uc_driver                           0x000000010048ec29 uc_driver + 4725801
+17  uc_driver                           0x00000001004b18c9 uc_driver + 4868297
+18  uc_driver                           0x0000000100480b44 uc_driver + 4668228
+19  uc_driver                           0x00000001004d0da8 uc_driver + 4996520
+20  uc_driver                           0x00000001004d0fa7 uc_driver + 4997031
+21  uc_driver                           0x00000001004e06ae uc_driver + 5060270
+22  libsystem_pthread.dylib             0x00007ff8098b418b _pthread_start + 99
+23  libsystem_pthread.dylib             0x00007ff8098afae3 thread_start + 15
+
