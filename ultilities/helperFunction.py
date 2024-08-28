@@ -8,7 +8,7 @@ from threading import Lock
 import os
 import shutil
 import subprocess
-
+from datetime import datetime
 lock = Lock()
 
 
@@ -31,6 +31,15 @@ def clear_python_cache(directory):
 
 # Clear cache in the current directory and its subdirectories
 clear_python_cache(".")
+
+def convertStrTimeToSec(date_string):
+    date_format = "%d/%m/%Y %H:%M"
+    date_object = datetime.strptime(date_string, date_format)
+
+    # Convert the datetime object to seconds since the Unix epoch
+    seconds_since_epoch = int(date_object.timestamp())
+
+    return seconds_since_epoch
 
 def conver_comicName_to_hash(name):
     # Create a hash object

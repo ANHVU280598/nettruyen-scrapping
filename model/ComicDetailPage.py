@@ -1,17 +1,19 @@
 from dataclasses import dataclass
 from typing import List
 
+
+
 @dataclass
-class ComicHomePage:
+class ComicDetailPage:
     hash_id: int
     name: str
-    description: str
     img_url: str
-    no_chapter: int
-    views: int
-    no_comment: int
+    description: str
+    author: str
     genres: List[str]
-
+    view: int
+    update: str
+    chapters: List[str]
 
     def to_dict(self):
         return {
@@ -20,7 +22,6 @@ class ComicHomePage:
             "comic_url": self.comic_url,
             "description": self.description,
             "no_chapter": self.no_chapter,
-            "views":self.views,
             "no_comment": self.no_comment,
             "genres": self.genres,
             "img_url": self.img_url

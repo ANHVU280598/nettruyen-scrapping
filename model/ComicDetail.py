@@ -11,6 +11,11 @@ class ComicDetail:
     other_name: List[str]
     genres: List[str]
     status: str
+    chapters: List[str]
+    lastUpdate: int
+    description: str
+    no_chapter: int
+    author: str
 
     def to_dict(self):
         return {
@@ -22,4 +27,9 @@ class ComicDetail:
             "other_name": self.other_name,
             "genres": self.genres,
             "status": self.status,
+            "chapters": self.chapters,
+            "lastUpdate": self.lastUpdate,
+            "description": self.description,
+            "no_chapter": self.no_chapter,
+            "author": self.author
         }

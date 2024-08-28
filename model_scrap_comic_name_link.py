@@ -3,7 +3,7 @@ from seleniumbase import Driver
 from selenium.webdriver.common.by import By
 import time
 import logging
-from model.ComicHomePage import ComicHomePage
+from model.ComicNameAndLinkModel import ComicNameAndLinkModel
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from ultilities.retryOnException import retry_on_exception
 
@@ -16,7 +16,7 @@ logging.basicConfig(filename='error_log_model_scrap_comic_homepage.log',
 
 @retry_on_exception(retries=3, delay=2)
 def process_comicHomePage(base_url, xPATH):
-        try:
+    try:
         print(base_url)
         driver = Driver(uc=True, headless=True)
         driver.uc_open_with_reconnect(base_url, 4)
@@ -29,24 +29,13 @@ def process_comicHomePage(base_url, xPATH):
             try:
                 name = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'fl-r')]//h3").text
                 comic_url = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'fl-r')]//h3//a").get_attribute('href')
-                description = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'fl-r')]//p").text
-                no_chapter = comic_div.find_element(By.XPATH, ".//footer/div[1]/span[4]/span").text
-                no_comment = comic_div.find_element(By.XPATH, ".//footer/div[1]/span[5]/span").text
-                genere_temp = comic_div.find_elements(By.XPATH, ".//footer/div[2]/a")
-                img_url = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'fl-l')]//a//img").get_attribute('src')
-
-                generes = [genere.text for genere in genere_temp]
 
                 hash_id = helper.conver_comicName_to_hash(name)
-                comicHomePage = ComicHomePage(
+                comicHomePage = ComicNameAndLinkModel(
                     hash_id=hash_id,
                     name=name,
                     comic_url=comic_url,
-                    description=description,
-                    no_chapter=no_chapter,
-                    no_comment=no_comment,
-                    genres=generes,
-                    img_url=img_url
+
                 )
                 helper.write_to_json(comicHomePage.to_dict(), 'blogtruyenHomePage.json')
 
@@ -57,6 +46,7 @@ def process_comicHomePage(base_url, xPATH):
 
     except Exception as e:
         logging.error(f"Error in process_comicHomePage at URL: base_url \n Hash_ID: {hash_id} \n{e}", exc_info=True)
+
 
 
 if __name__ == "__main__":
@@ -91,7 +81,9 @@ if __name__ == "__main__":
                 future.result()  # Retrieve result or handle exceptions
             except Exception as e:
                 logging.error(f"Error At line 85:  {url}: \n Error:  {e}")
-    # -----------------END BLOG TRUYEN-----------------#
+
+                
+    # -----------------END BLOG TRUYEN-----------------# 
 
 
     
