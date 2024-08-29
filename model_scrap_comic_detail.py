@@ -18,7 +18,7 @@ logging.basicConfig(filename='error_log_model_scrap_comic_homepage.log',
 def process_comicHomePage(base_url, xPATH):
     try:
         print(base_url)
-        driver = Driver(uc=True, headless=True)
+        driver = Driver(uc=True, headless=False)
         driver.uc_open_with_reconnect(base_url, 4)
         driver.sleep(3)
         helper.scroll_to_end_of_the_page(driver)
@@ -27,19 +27,57 @@ def process_comicHomePage(base_url, xPATH):
 
         for comic_div in comic_divs:
             try:
-                name = comic_div.find_element(By.XPATH, ".//h1[contains(@class, 'entry-title')]//a").text
-                descriptions = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'detail')]//div[contains(@class, 'content')]")
-                img_url = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'thumbnail')]//img").get_attribute('src')
-                no_chapter = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'list-chapters')]//div[contains(@class, 'list-wrap')]//p")
-                views = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//p[6]//span[1]").text
-                lastUpdate_temp = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//span[contains(@class, 'color-green')]").text
-                genere_temp = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'description')]//p[4]//span")
-                status = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//p[5]//span").text
-                author = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//p[1]//a").text
-                chapters = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'list-chapters')]//div[contains(@class, 'list-wrap')]//p//span[1]//a")
+                try:
+                    name = comic_div.find_element(By.XPATH, ".//h1[contains(@class, 'entry-title')]//a").text
+                except Exception:
+                    name = ""
+
+                try:
+                    descriptions = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'detail')]//div[contains(@class, 'content')]")
+                except Exception:
+                    descriptions = []
+
+                try:
+                    img_url = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'thumbnail')]//img").get_attribute('src')
+                except Exception:
+                    img_url = ""
+
+                try:
+                    no_chapter = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'list-chapters')]//div[contains(@class, 'list-wrap')]//p")
+                except Exception:
+                    no_chapter = []
+
+                try:
+                    views = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//span[contains(@id, 'PageViews')]").text
+                except Exception:
+                    views = ""
+
+                try:
+                    lastUpdate_temp = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//span[contains(@class, 'color-green')]").text
+                except Exception:
+                    lastUpdate_temp = ""
+
+                try:
+                    genere_temp = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'description')]//span[contains(@class, 'category')]")
+                except Exception:
+                    genere_temp = []
+
+                try:
+                    status = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//p[5]//span").text
+                except Exception:
+                    status = ""
+
+                try:
+                    author = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//p[1]//a").text
+                except Exception:
+                    author = ""
+
+                try:
+                    chapters = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'list-chapters')]//div[contains(@class, 'list-wrap')]//p//span[1]//a")
+                except Exception:
+                    chapters = []
                 rating = 0
                 other_name = []
-                
                 strings = []
                 for des in descriptions:
                     strings.append(des.text)
@@ -78,12 +116,12 @@ def process_comicHomePage(base_url, xPATH):
 
 
             except Exception as e:
-                logging.error(f"Error in process_comicHomePage at URL: base_url \n Hash_ID: {hash_id} \n{e}", exc_info=True)
+                logging.error(f"Error in process_comicHomePage line 81 at URL: {base_url} \n Hash_ID: {hash_id} \n{e}", exc_info=True)
                 
         helper.clear_system_cache()
 
     except Exception as e:
-        logging.error(f"Error in process_comicHomePage at URL: base_url \n Hash_ID: {hash_id} \n{e}", exc_info=True)
+        logging.error(f"Error in process_comicHomePage line 86 at URL: {base_url} \n Hash_ID: {hash_id} \n{e}", exc_info=True)
 
 
 
@@ -120,7 +158,7 @@ if __name__ == "__main__":
     #         except Exception as e:
     #             logging.error(f"Error At line 85:  {url}: \n Error:  {e}")
 
-    test_url = "https://blogtruyen.vn/41802/hero-x-demon-king-x-villain"
+    test_url = "https://blogtruyen.vn/32253/sau-khi-bi-dung-si-cuop-di-moi-thu-toi-da-lap-to-doi-cung-voi-me-cua-dung-si"
     process_comicHomePage(test_url, xPATH )
                 
     # -----------------END BLOG TRUYEN-----------------# 
