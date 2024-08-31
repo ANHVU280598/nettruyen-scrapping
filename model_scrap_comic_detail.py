@@ -6,7 +6,7 @@ import logging
 from model.ComicDetail import ComicDetail
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from ultilities.retryOnException import retry_on_exception
-
+from ultilities.helperFunction import read_json_file
 
 # Configure the logging to append to the log file if it exists
 logging.basicConfig(filename='error_log_model_scrap_comic_homepage.log',
@@ -15,10 +15,10 @@ logging.basicConfig(filename='error_log_model_scrap_comic_homepage.log',
 
 
 @retry_on_exception(retries=3, delay=2)
-def process_comicHomePage(base_url, xPATH):
+def process_comicHomePage(base_url, xPATH, i):
     try:
-        print(base_url)
-        driver = Driver(uc=True, headless=False)
+        print(f"Index: {i}, URL: {base_url}")
+        driver = Driver(uc=True, headless=True)
         driver.uc_open_with_reconnect(base_url, 4)
         driver.sleep(3)
         helper.scroll_to_end_of_the_page(driver)
@@ -90,7 +90,10 @@ def process_comicHomePage(base_url, xPATH):
 
                 hash_id = helper.conver_comicName_to_hash(name)
                 description="".join(strings)
-                lastUpdate = helper.convertStrTimeToSec(lastUpdate_temp)
+                try :
+                    lastUpdate = helper.convertStrTimeToSec(lastUpdate_temp)
+                except Exception as e:
+                    lastUpdate = ''
 
                 chapter_links = []
                 for chapter in chapters:
@@ -119,6 +122,7 @@ def process_comicHomePage(base_url, xPATH):
                 logging.error(f"Error in process_comicHomePage line 81 at URL: {base_url} \n Hash_ID: {hash_id} \n{e}", exc_info=True)
                 
         helper.clear_system_cache()
+        driver.quit()
 
     except Exception as e:
         logging.error(f"Error in process_comicHomePage line 86 at URL: {base_url} \n Hash_ID: {hash_id} \n{e}", exc_info=True)
@@ -139,27 +143,27 @@ if __name__ == "__main__":
     no_comment      = ".//footer/div[1]/span[5]/span"
     genere_temp     = ".//footer/div[2]/a"
     img_url         = ".//div[contains(@class, 'fl-l')]//a//img"
+    
+    data = read_json_file("blogtruyenHomePage.json")
+    print(data[0]['comic_url'])
     # Multi thread
 
-    # max_threads = 2
+    max_threads = 5
 
-    # with ThreadPoolExecutor(max_workers=max_threads) as executor:
-    #     futures = []
-    #     for i in range(1, noPage):
-    #         page_index = "" if i == 0 else f"/page-{i}"
-    #         url = f"{base_url}{page_index}"
-    #         future = executor.submit(process_comicHomePage, url, xPATH)
-    #         futures.append(future)
+    with ThreadPoolExecutor(max_workers=max_threads) as executor:
+        futures = []
+        for i in range(3181, len(data)):
+            url = data[i]['comic_url']
+            future = executor.submit(process_comicHomePage, url, xPATH, i)
+            futures.append(future)
 
-    #     # Optional: Handle results or exceptions if needed
-    #     for future in as_completed(futures):
-    #         try:
-    #             future.result()  # Retrieve result or handle exceptions
-    #         except Exception as e:
-    #             logging.error(f"Error At line 85:  {url}: \n Error:  {e}")
+        # Optional: Handle results or exceptions if needed
+        for future in as_completed(futures):
+            try:
+                future.result()  # Retrieve result or handle exceptions
+            except Exception as e:
+                logging.error(f"Error At line 85:  {url}: \n Error:  {e}")
 
-    test_url = "https://blogtruyen.vn/32253/sau-khi-bi-dung-si-cuop-di-moi-thu-toi-da-lap-to-doi-cung-voi-me-cua-dung-si"
-    process_comicHomePage(test_url, xPATH )
                 
     # -----------------END BLOG TRUYEN-----------------# 
 
