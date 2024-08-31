@@ -60,15 +60,15 @@ def process_comicHomePage(base_url, xPATH):
                 try:
                     genere_temp = comic_div.find_elements(By.XPATH, ".//div[contains(@class, 'description')]//span[contains(@class, 'category')]")
                 except Exception:
-                    genere_temp = []
+                    genere_temp = [] 
 
                 try:
-                    status = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//p[5]//span").text
+                    status = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//span[contains(@class, 'color-red')]").text
                 except Exception:
                     status = ""
 
                 try:
-                    author = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//p[1]//a").text
+                    author = comic_div.find_element(By.XPATH, ".//div[contains(@class, 'description')]//a[contains(@class, 'color-green label label-info')]").text
                 except Exception:
                     author = ""
 

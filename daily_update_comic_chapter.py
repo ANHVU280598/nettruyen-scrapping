@@ -1,13 +1,5 @@
 import json
 
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     file_path_comic_name = 'comic_name.json'
     file_path_comic_chapter = 'comic_chapters.json'

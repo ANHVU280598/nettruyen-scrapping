@@ -65,7 +65,7 @@ if __name__ == "__main__":
     img_url         = ".//div[contains(@class, 'fl-l')]//a//img"
     # Multi thread
 
-    max_threads = 2
+    max_threads = 10
 
     with ThreadPoolExecutor(max_workers=max_threads) as executor:
         futures = []
